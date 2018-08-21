@@ -1,0 +1,34 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    position: static;
+    width: 100%;
+    background-color: crimson;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    text-decoration: none;
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    color: white;
+}
+
+li a:hover{
+    background-color: blue
+}
+
+p{
+    font-size: 15px;
+    color: white;
+}
+.Ptags{
+    float: right;
+}
