@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dailymotion - explora y ve videos en linea</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Style the header */
+        header {
+            background-color: white;
+            padding: 10px;
+            text-align: left;
+            font-size: 20px;
+            color: black;
+        }
+        
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px; /* only for demonstration, should be removed */
+        }
+        
+        /* Clear floats after the columns */
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.vimeo-wrapper {
+        max-width: 980px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .vimeo-standard {
+        float: left;
+        height: 250px;
+        width: 47%;
+        border: 1px solid #000;
+        margin: 10px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    @media (max-width:767px) {
+
+        .vimeo-standard {
+            float: none;
+            width: 80%;
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+        </style>
+
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="" width="114px" height="20px">
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Para usted
+        &nbsp&nbsp&nbsp&nbsp Explorar
+        <input type="search" name="" placeholder="Encontrar videos, canales..." size="30">
+        <button type="button">Iniciar Sesion</button>
+    </header>
+
+    <section style="background-color:rgba(128, 128, 128, 0.267);">
+        <div style="background-color:rgba(128, 128, 128, 0.267);">
+            <p>Videos del momento</p>
+        </div>
+            <div class="vimeo-wrapper">
+                    <div class="vimeo-video-1 vimeo-standard">
+                        <iframe width="820" height="315" src="https://www.youtube.com/embed/668nUCeBHyY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="vimeo-video-2 vimeo-standard">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nhpRV9X5Ldc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+            </div>     
+    </section>
+
+    <section>
+
+        <div style="background-color:rgba(128, 128, 128, 0.267);">
+            <p>Lista de reproduccion destacada</p>
+        </div>
+        <div class="vimeo-wrapper">
+                <div class="vimeo-video-1 vimeo-standard">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_tNVEhSelH0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                
+                <div class="vimeo-video-2 vimeo-standard">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RgKqxLAhRKE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+        </div>     
+    </section>
+
+    <section style="background-color:rgba(128, 128, 128, 0.267);">
+
+        <div style="background-color:rgba(128, 128, 128, 0.267);">
+            <p>Lo destacado de la semana</p>
+        </div>
+
+        <div class="vimeo-wrapper">
+                <div class="vimeo-video-1 vimeo-standard">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2re8zZ_mV2w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                
+                <div class="vimeo-video-2 vimeo-standard">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/q6tTRKvoPBs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+        </div>     
+    </section>
+
+    <footer>
+        Sobre nosostros 
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNovedades
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCentro de ayuda
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTrabajos
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAPI
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAsociarse
+    </footer>
+
+</body>
+</html>
