@@ -1,0 +1,349 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+.navBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 12px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+    width: 99%;
+    
+}
+
+.navBar li {
+    float: left;
+    margin-left: 1rem;
+}
+
+.navBar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 6px 8px;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 14px;
+}
+
+
+.bienvenido{
+    color: white;
+    text-align: center;
+}
+.banner{
+    margin: 5.5rem;
+
+}
+.bienvenido h1{
+    margin-top: 110px;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.botones{
+    margin: 2rem;
+}
+
+.bienvenido li .input-subir{
+    width: 210px;
+    height: 35px;
+    text-align: start;
+    margin: 0em;
+    color: white!important;
+    background: rgba(255,255,255,.2);
+    border: none!important;
+    box-sizing: content-box;
+    
+}
+::placeholder {
+    color: white;
+    font-size: 1em;
+  }
+
+  .bienvenido li .boton-subir{
+    background-color: rgb(15, 159, 255);
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+}
+.bienvenido video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+}
+
+.boton-unirse {
+    background-color: rgb(91, 201, 1);
+    border-radius: 4px;
+    color: white;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+.boton-encontrar {
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1.5rem;
+}
+.boton-registrarse{
+    background-color: rgb(91, 201, 1);
+    border-radius: 4px;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1.5rem;
+
+}
+
+.seccion-info{
+    background-color: rgb(227, 253, 244);
+    display: flex;
+}
+
+.seccion-info img{
+    margin: 5rem;
+}
+.seccion-info h2{
+    font-size: 2.25rem;
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+
+.seccion-info p{
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.seccion-info a { 
+    font-size: 1.25rem;
+    border-color: #00ADEF;
+    background-color: #00ADEF;
+    border-radius: 4px;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 1.5rem;
+    letter-spacing: .5px;
+    margin-bottom: 7.5rem;
+
+}
+
+.seccion-descubre {
+    text-align: center;
+}
+.seccion-descubre h2{
+    font-family: Brown-Pro-Regular,sans-serif;
+    font-size: 2.25rem;
+}
+.seccion-descubre h3{
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 1.25rem;
+}
+
+.contenedor-videos iframe{
+    margin: .2rem;
+}
+
+.contenedor-videos a { 
+    font-size: 1.25rem;
+    border-color: #00ADEF;
+    background-color: #00ADEF;
+    border-radius: 4px;
+    color: white;
+    padding: .8em;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 1.5rem;
+    letter-spacing: .5px;
+    margin-bottom: 7.5rem;
+
+}
+
+
+.creador-herramientas{
+    background-image: url('./img/creador-herramientas.jpg');
+    width:100%;
+    height:789px;
+    display: flex;
+    text-align: center;
+
+}
+.creador-herramientas h2, iframe{
+    margin-top: 12rem;
+}
+.creador-herramientas h2{
+    color: #FFF;
+    text-align: left;
+    font-family: Brown-Pro-Regular,sans-serif;
+    font-size: 2.25rem;
+    display: block; 
+}
+.creador-herramientas ul {
+    list-style-type: none;
+    
+}
+.creador-herramientas li  {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+.footer-creador-herramientas{
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin: 1.875rem auto;
+    text-align: center;
+}
+
+.footer-creador-herramientas a { 
+    font-size: 1.25rem;
+    border-color: #00ADEF;
+    background-color: #00ADEF;
+    border-radius: 4px;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 1.5rem;
+    letter-spacing: .5px;
+    margin-bottom: 7.5rem;
+
+}
+
+.seccion-testimonios{
+    color: #1a2e3b;
+    text-align: center;
+}
+.seccion-testimonios p{
+    font-size: 2.25rem;
+}
+.seccion-testimonios span{
+    font-size: 1.25rem;
+    margin-bottom: 5rem;
+}
+
+.seccion-crear{
+    background-image: url('./img/crear.png');
+    width:100%;
+    height:650px;
+    text-align: center;
+}
+.seccion-crear-cuadros{
+    display: flex;
+    text-align: center;
+}
+.seccion-crear h2{
+    color: #FFF;
+    font-family: Brown-Pro-Regular,sans-serif;
+    font-size: 2rem;
+}
+
+.seccion-crear h3{
+    color: #1AA8AE;
+    font-size: 1.5rem;
+    font-family: Brown-Pro-Regular,sans-serif;
+}
+
+.miembro-autonomo, .miembro-empresa {
+    margin-left: 9.5rem;
+    background-color: white;
+    padding: 1rem;
+}
+
+
+.miembro-autonomo ul {
+    list-style-type: none;
+}
+.miembro-empresa ul {
+    list-style-type: none;
+}
+
+    
+.miembro-empresa li  {
+    text-decoration: none;
+}
+.miembro-empresa li  {
+    text-decoration: none;
+}
+.seccion-crear-cuadros a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F4F5;
+    border-top: 1px solid #D0D8DB;
+    border-bottom: 1px solid #D0D8DB;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+footer ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 1.25rem 0 0;
+}
+footer ul li{
+    text-decoration: none;
+    background-color: transparent;
+}
+footer ul li span{
+    font-weight: bold;
+}
+
+
+.footer-derechos ul {
+    font-size: .75rem;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+footer aside{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+.footer-derechos ul li{
+    padding: 19px;
+
+}
