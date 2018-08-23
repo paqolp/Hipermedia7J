@@ -1,0 +1,47 @@
+html {
+    background: url(./orig_67158.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+div.center-login {
+    width: 400px;
+    margin: auto;
+}
+
+.no-link-decoration {
+    text-decoration: none;
+    color: violet;
+}
+
+a.no-link-decoration{
+    padding: 5px;
+    background-color: beige;
+    color: black;
+    margin: 35%;
+}
+
+h3.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    margin: 0px;
+}
+
+div.container-form {
+    height: 50%;
+    width: 400px;
+    background-color: white;
+}
+
+input.custom-input {
+    padding: 5px;
+    border: 0px;
+}
+
+div.form-group{
+    margin: 7px;
+}
