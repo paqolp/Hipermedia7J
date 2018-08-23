@@ -1,0 +1,13 @@
+- Bibliografias
+1. apr. (2018). ¿Cuáles son las versiones de HTML? Diferencias entre HTML 4 y HTML 5. 
+Significado de strict... (CU00706B). 2018, de apr Sitio web: 
+https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=444:icuales-
+son-las-versiones-de-html-diferencias-entre-html-4-y-html-5-significado-de-strict-cu00706b&catid=69&Itemid=192
+
+2. Versiones del lenguaje HTML. (2018, 28 abril). Recuperado 22 agosto, 2018, de 
+http://herramientasdelwebmaster.blogspot.com/2011/03/primera-pagina-web-mundo.html
+
+3. Castiblanco, A. N. D. R. E. A. Rios. (2018, 28 abril). VERSIONES DE HTML. Recuperado 22 agosto, 2018, 
+de https://tutorielsblog.wordpress.com/2013/04/12/versiones-de-html/
+
+4. HTML and XHTML. (2018, 22 agosto). Recuperado 22 agosto, 2018, de https://www.w3schools.com/html/html_xhtml.asp
