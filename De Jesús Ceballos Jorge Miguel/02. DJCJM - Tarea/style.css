@@ -1,0 +1,138 @@
+body {
+    font-family: Retina, arial;
+}
+
+/* ###################################### header ###################################### */
+
+#navbar {
+    border-bottom: 1px #eff0f2 solid;
+    background-color: white;
+    position: fixed;
+    height: 3.6em;
+    z-index: 999;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar * {
+    margin-right: 1.5em;
+}
+
+#navbar img {
+    width: 7em;
+    margin-right: 17em;
+}
+
+#navbar a {
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+#not-current {
+    text-decoration: none;
+    color: black;
+}
+
+#current-page {
+    text-decoration: underline;
+    color: blue;
+}
+
+#navbar input {
+    padding: 0.8em 9em 0.8em 0.8em;
+    background-color: rgb(243, 243, 243);
+    border-style: none;
+    border-radius: 0.2em;
+}
+
+#navbar button {
+    background-image: linear-gradient(to right, #00adfe, #00d0f4);
+    border-radius: 0.2em;
+    padding: 0.6em 1em;
+    font-weight: bold;
+    color: white;
+    border: none;
+}
+
+#navbar i {
+    position: relative;
+    right: 6em;
+}
+
+/* ###################################### top ###################################### */
+
+#top iframe {
+    position: absolute;
+    overflow: hidden;
+    left: 0em;
+    top: 3.6em;
+    width: 100%;
+    height: 20em;
+    z-index: -999;
+    height: 25.7em;
+}
+
+#top div {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top img {
+    margin-top: 20em;
+    margin-left: 12em;
+    width: 2.7em;
+}
+
+#top p {
+    margin-top: 24.5em;
+    margin-left: .7em;
+    font-size: 0.85em;
+    font-weight: bold;
+    color: white;
+}
+
+#top h1 {
+    color: white;
+    margin-left: 6em;
+    font-weight: lighter;
+}
+
+/* ###################################### content ###################################### */
+
+.white-row {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    left: 0;
+    width: 110%;
+}
+
+.grey-row {
+    background-color: rgb(240, 240, 240);
+    position: relative;
+    left: 0;
+    width: 110%;
+}
+
+.row {
+    margin: 0 auto 0 auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 70%;
+}
+
+.row p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+h3 {
+    color: rgb(100, 100, 100);
+    font-size: 0.8em;
+}

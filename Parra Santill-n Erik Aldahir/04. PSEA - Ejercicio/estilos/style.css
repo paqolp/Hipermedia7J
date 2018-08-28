@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #d8b5b5;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #a78aa6;
+}
+
+li{
+    display: inline-block;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.partes{
+    width: 100%;
+    height: 30px;
+    padding-left: 3%;
+    padding-top: 5px;
+    background-color: #d4c1cb;
+
+}
+
+.articulo{
+    padding: 20px 30px;
+    display: inline-block;
+}
+
+.camisa{
+    width: 208px;
+    height: 344px;
+}
+
