@@ -1,0 +1,117 @@
+body {
+    font-family: "Roboto", "Helvetica", "Arial", "sans-serif";
+}
+
+.section-profile {
+    display: block;
+    margin-top: 0.5em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    width: 33.33%;
+    float: left;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.profile-picture {
+    display: block;
+    height: 55%;
+    width: 100%;
+    border-style: none;
+}
+
+.profile-name {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.75em;
+}
+
+.profile-section-title {
+    margin-top: 0;
+    margin-left: 0.8em;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.profile-label {
+    margin-top: 0;
+    margin-bottom: 0.75em;
+    margin-left: 0.1em;
+    font-size: 1.1em;
+}
+
+.profile-icon {
+    margin-left: 0.8em;
+    margin-right: 0.2em;
+}
+
+.profile-hr {
+    width: 92%;
+    margin-bottom: 0.75em;
+}
+
+.section-info {
+    margin-top: 0.5em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    width: 63.5%;
+    float: left;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.section-title {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.section-subtitle {
+    margin-left: 1em;
+    font-size: 1.3em;
+    margin-bottom: 0.3em;
+}
+
+.section-subtitle-hr {
+    width: 95%;
+}
+
+.school-name {
+    margin-left: 1.2em;
+    font-size: 1.15em;
+    opacity: 0.60;
+}
+
+.period {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 1.2em;
+}
+
+.career {
+    margin-top: 0;
+    margin-left: 1.3em;
+}
+
+.current {
+    border-radius: 4px;
+    padding: 4px 8px 4px 8px;
+    background-color: black;
+    color: white;
+}
+
+.description {
+    margin-top: 0;
+    margin-left: 1.4em;
+    margin-right: 1.4em;
+    word-wrap: break-word;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    width: 100;
+}
