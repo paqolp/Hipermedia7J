@@ -1,0 +1,75 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #5C6784;
+    color: white;
+}
+
+/* ##################### General style ##################### */
+
+table * {
+    margin: 2em;
+    padding: 1em;
+}
+
+/* ##################### Header style ##################### */
+
+header {
+    border-bottom: solid white 1px;
+    padding-bottom: 1em;
+}
+
+header img {
+    filter: brightness(10);
+    vertical-align: middle;
+    display: inline;
+    width: 5em;
+    margin-left: 1em;
+}
+
+header h1 {
+    display: inline;
+    vertical-align: middle;
+    margin-left: 1em;
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+}
+
+header input {
+    float: right;
+    margin: 2em 0em;
+    padding: 0.8em 60em 0.8em 0.8em;
+    border-radius: 0.5em;
+}
+
+/* ##################### Content style ##################### */
+
+main h1 {
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+main div {
+    text-align: center;
+}
+
+main img {
+    width: 20em;
+    background-color: #b4bacf;
+    padding: 2.5em;
+    border-radius: 0.2em;
+}
+
+/* ##################### Footer style ##################### */
+
+footer {
+    background-color: #42495e;
+}
+
+footer table {
+    margin-left: 34em;
+}
+
+footer div {
+    padding: 3em;
+    background-color: #303544;
+}
