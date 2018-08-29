@@ -1,0 +1,73 @@
+*{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 12px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+    width: 99%;
+    
+    
+}
+
+nav li {
+    float: left;
+    margin-left: 5rem;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 6px 8px;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 14px;
+}
+nav{
+    margin-bottom: 80px;
+
+}
+
+h1
+{
+    text-align: center;   
+}
+
+.banner{
+    margin: 0;
+
+}
+.tipos-productos{
+    display: flex;
+}
+.tipos-productos img{
+    text-align: center;
+    padding: 10px;
+
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+}
+.opciones-envio{
+    font-size: 25px;
+    text-align: center;
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F4F5;
+    border-top: 1px solid #D0D8DB;
+    border-bottom: 1px solid #D0D8DB;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
