@@ -1,0 +1,57 @@
+body{
+  background: #DAE3E7;
+}
+
+img{
+  max-width:100%
+}
+
+
+
+.my-name{
+  margin-top: 40px;
+}
+
+.container-top{
+  margin-top:20px;
+}
+
+.container-top_btnMail{
+  margin:10px 0
+}
+
+.details,
+.interest-items {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+h5{
+  color:#3AAA64
+}
+
+.list-group {
+    list-style: disc inside;
+
+}
+
+.list-group-item {
+    display: list-item;
+}
+
+.list-group{
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
+.label-theme{
+  background: #3AAA64;
+  font-size: 14px;
+  padding: .3em .7em .3em;
+  color: #fff;
+  border-radius: .25em;
+}
+
+a{
+  color: inherit;
+}
