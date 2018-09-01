@@ -1,0 +1,94 @@
+*{
+padding: 0px;
+margin: 0px;
+}
+/*
+div{
+    padding-left: 0px;  
+    margin-left: 0px;
+}
+*/
+container-fluid{
+    padding-left: 0px;
+}
+img
+{
+    width: 100%;
+    height: 
+    display: block;
+    margin: : auto;
+}
+#barranavegacion
+{
+    background-color: #333333;
+    
+}
+#DatosPersonales>p
+{
+    color: white;
+}
+p{
+    font-family : arial;
+    font-size: 14px;
+    text-align: justify;
+   
+}
+
+#barranavegacion
+{
+    color: #ffffff;
+}
+
+#informacion-educativa
+{
+    margin-top: 23px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.row
+{
+    padding-bottom: 0px;
+  padding-left: 0px;
+}
+#DatosPersonales
+{
+    
+    width: 337px;
+    padding-left:10px;
+    background-color: #333333;;
+    margin-left: 0px;
+}
+#imagen
+{   
+    overflow: hidden;
+    background-color: #333333;
+    padding: 0px;
+    margin: 0px;
+    
+}
+#contactos
+{
+
+    padding-left: 45px;
+}
+
+footer
+{
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 100px;;
+    background-color: #333333;
+    padding-left: 0px;
+    margin-left: 0px;
+    color: #ffffff;
+}
+footer>h1
+{
+    margin: 10px;
+}
+
+a
+{
+ text-decoration: none;
+}
