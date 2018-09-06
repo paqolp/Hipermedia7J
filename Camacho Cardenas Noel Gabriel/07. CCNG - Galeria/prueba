@@ -1,0 +1,142 @@
+      .imagen:hover:nth-of-type(10):before {
+      top: -800%; /* (Nº.nth-1)*(-100) */
+      }
+      .imagen:hover:nth-of-type(11):before {
+      top: -900%; /* (Nº.nth-1)*(-100) */
+      }
+      .imagen:hover:nth-of-type(12):before {
+        top: -1000%; /* (Nº.nth-1)*(-100) */
+        }
+        .imagen:hover:nth-of-type(13):before {
+        top: -1100%; /* (Nº.nth-1)*(-100) */
+        }
+        .imagen:hover:nth-of-type(14):before {
+          top: -1200%; /* (Nº.nth-1)*(-100) */
+          }
+        .imagen:hover:nth-of-type(15):before {
+          top: -1300%; /* (Nº.nth-1)*(-100) */
+          }
+
+        .imagen:hover:nth-of-type(16):before {
+        top: -1400%; /* (Nº.nth-1)*(-100) */
+        }
+        .imagen:hover:nth-of-type(17):before {
+          top: -1500%; /* (Nº.nth-1)*(-100) */
+          }
+          .imagen:hover:nth-of-type(18):before {
+          top: -1600%; /* (Nº.nth-1)*(-100) */
+          }
+          .imagen:hover:nth-of-type(19):before {
+          top: -1700%; /* (Nº.nth-1)*(-100) */
+          }
+          .imagen:hover:nth-of-type(20):before {
+          top: -1800%; /* (Nº.nth-1)*(-100) */
+          }
+          .imagen:hover:nth-of-type(21):before {
+          top: -1900%; /* (Nº.nth-1)*(-100) */
+          }
+          .imagen:hover:nth-of-type(22):before {
+            top: -2000%; /* (Nº.nth-1)*(-100) */
+            }
+            .imagen:hover:nth-of-type(23):before {
+              top: -2100%; /* (Nº.nth-1)*(-100) */
+              }
+              .imagen:hover:nth-of-type(24):before {
+              top: -2200%; /* (Nº.nth-1)*(-100) */
+              }
+              .imagen:hover:nth-of-type(25):before {
+              top: -2300%; /* (Nº.nth-1)*(-100) */
+              }
+              .imagen:hover:nth-of-type(26):before {
+              top: -2400%; /* (Nº.nth-1)*(-100) */
+              }
+              .imagen:hover:nth-of-type(27):before {
+                top: -2500%; /* (Nº.nth-1)*(-100) */
+                }
+                .imagen:hover:nth-of-type(28):before {
+                top: -2600%; /* (Nº.nth-1)*(-100) */
+                }
+                .imagen:hover:nth-of-type(29):before {
+                top: -2700%; /* (Nº.nth-1)*(-100) */
+                }
+                .imagen:hover:nth-of-type(30):before {
+                top: -2800%; /* (Nº.nth-1)*(-100) */
+                }
+                .imagen:hover:nth-of-type(31):before {
+                top: -2900%; /* (Nº.nth-1)*(-100) */
+                }
+        
+
+
+        --------------
+
+
+            .imagen:nth-of-type(10) {
+    background-image: url(./img/pic10.jpeg);
+    }
+    .imagen:nth-of-type(11) {
+    background-image: url(./img/pic11.jpeg);
+    }
+    .imagen:nth-of-type(12) {
+    background-image: url(./img/pic12.jpeg);
+    }
+  
+    .imagen:nth-of-type(13) {
+    background-image: url(./img/pic13.jpeg);
+    }
+    .imagen:nth-of-type(14) {
+    background-image: url(./img/pic14.jpeg);
+    }
+    .imagen:nth-of-type(15) {
+    background-image: url(./img/pic15.jpeg);
+    }
+    .imagen:nth-of-type(16) {
+    background-image: url(./img/pic16.jpeg);
+    }
+    .imagen:nth-of-type(17) {
+    background-image: url(./img/pic17.jpeg);
+    }
+    .imagen:nth-of-type(18) {
+    background-image: url(./img/pic18.jpeg);
+    }
+    .imagen:nth-of-type(19) {
+    background-image: url(./img/pic19.jpeg);
+    }
+    .imagen:nth-of-type(20) {
+    background-image: url(./img/pic20.jpeg);
+    }
+    .imagen:nth-of-type(21) {
+    background-image: url(./img/pic21.jpeg);
+    }
+    .imagen:nth-of-type(22) {
+    background-image: url(./img/pic22.jpeg);
+    }
+    .imagen:nth-of-type(23) {
+    background-image: url(./img/pic23.jpeg);
+    }
+    .imagen:nth-of-type(24) {
+    background-image: url(./img/pic24.jpeg);
+    }
+    .imagen:nth-of-type(25) {
+    background-image: url(./img/pic225.jpeg);
+    }
+    .imagen:nth-of-type(26) {
+    background-image: url(./img/pic26.jpeg);
+    }
+    .imagen:nth-of-type(27) {
+    background-image: url(./img/pic27.jpeg);
+    }
+    .imagen:nth-of-type(28) {
+    background-image: url(./img/pic28.jpeg);
+    }
+    .imagen:nth-of-type(29) {
+    background-image: url(./img/pic29.jpeg);
+    }
+    .imagen:nth-of-type(30) {
+    background-image: url(./img/pic30.jpeg);
+    }
+    .imagen:nth-of-type(31) {
+    background-image: url(./img/pic31.jpeg);
+    }
+      
+    
