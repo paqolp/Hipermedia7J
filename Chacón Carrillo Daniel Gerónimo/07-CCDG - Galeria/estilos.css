@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #607D8B;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estructura de galeria*/
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 33.33%;
+    /* IE10 */
+    flex: 33.33%;
+    max-width: 33.33%;
+    min-width: 300px;
+    padding: 8px 8px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+img {
+    width: 100%;
+    min-height: 300px;
+    min-width: 200px;
+}
+
+a {
+    cursor: pointer;
+}
+
+img.left:active {
+    width: 140% !important;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 2px 10px;
+}
+
+img.center:active {
+    width: 140% !important;
+    position: relative;
+    left: -20%;
+    z-index: 1;
+    box-shadow: 0px 2px 10px;
+}
+
+img.right:active {
+    width: 140% !important;
+    position: relative;
+    left: -40%;
+    z-index: 1;
+    box-shadow: 0px 2px 10px;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Diseño de galeria */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(69, 90, 100, .7);
+    /* Black see-through */
+    color: #f1f1f1;
+    font-weight: 600;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
