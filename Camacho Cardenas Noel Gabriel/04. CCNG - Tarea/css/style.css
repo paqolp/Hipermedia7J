@@ -1,0 +1,118 @@
+body {
+    background: #D4F4DD;
+    font: normal 300 18px "Roboto", sans-serif;
+    color: #1C1C1C;
+    padding: 0;
+    margin: 2px;
+  }
+  
+  #menu-nav {
+    max-width: 10   0%;
+    margin: 0px auto;
+    background-color: #ecf0f1;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #navigation-bar ul {
+    list-style-type: none;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  #navigation-bar li {
+    float: left;
+    width: 25%;
+
+  }
+  #navigation-bar li:hover a::before {
+    right: 0;
+    left: 0;
+  }
+  #navigation-bar a {
+    color: #848484;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 0;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+    text-align: center;
+
+  }
+  #navigation-bar a:hover {
+    color: #e74c3c;
+  }
+  #navigation-bar a::before {
+    content: "";
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    background-color: #e74c3c;
+  }
+
+  .banner {
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 310px;
+  }
+
+  
+  .formacion-academica, .logros{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 300px;
+    border-radius: 4px;
+
+    position: relative;
+    text-align: left;
+  }
+
+  .hobbies, .datos-interesantes{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 300px;
+    border-radius: 4px;
+
+    position: relative;
+    text-align: left;
+  }
+ 
+.texto-centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+
+}
+.texto-centradoW{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+
+}
+
+
+
+.footer{
+    color: white;
+    font-size: 1rem;    
+    text-align: center;
+    background-color: rgb(74, 79, 90);
+    padding: .2rem;
+}
+h2{
+    padding: 2.5rem;
+    text-align: center;
+}
+
+
