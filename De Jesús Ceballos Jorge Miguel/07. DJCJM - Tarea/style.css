@@ -1,0 +1,36 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+}
+
+nav {
+    height: 6em;
+}
+
+img {
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    margin: 0.3em;
+}
+
+img:hover {
+    opacity: .7;
+    cursor: zoom-in;
+}
+
+main div {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+#options {
+    padding-top: 2em;
+}
+
+i {
+    filter: brightness(9999999%);
+}
