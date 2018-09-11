@@ -1,0 +1,24 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+}
+
+nav {
+    height: 6em;
+}
+
+img {
+    width: 25em;
+    height: 25em;
+    border-radius: 50%;
+}
+
+ul {
+    margin-top: 2em !important;
+}
+
+form {
+    margin-top: 1em;
+}
