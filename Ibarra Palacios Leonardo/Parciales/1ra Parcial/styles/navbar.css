@@ -1,0 +1,19 @@
+#nav{
+    background-color: #3fa46a;
+    padding: 0.5em 0;
+}
+
+.link-1{
+    transition: 0.4s;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 0 10px;
+}
+
+.link-1:hover{
+    background-color: #ffffff;
+    color: #3fa46a;
+    padding: 24px 10px;
+}

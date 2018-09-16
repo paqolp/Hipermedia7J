@@ -1,0 +1,58 @@
+@import url(progressbar.css);
+@import url(navbar.css);
+
+*{
+    font-family: Arial, Verdana, sans-serif;
+    color: #665544;
+    text-align: center;
+}
+
+body {
+    margin: 20px;
+    color: #435757;
+    background: linear-gradient(-20deg, #d0b782 20%, #a0cecf 80%);
+    font: 500 1.2em/1.2 'Roboto', sans-serif;
+}
+
+h1{
+    background-color: white;
+}
+
+#content {
+    overflow: auto;
+}
+
+#feature, #footer {
+    margin: 1%;
+}
+
+img{
+    height: 10em;
+}
+
+.column1, .column2, .column3 {
+    width: 31.3%;
+    float: left;
+    margin: 1%;
+}
+
+.column3 {
+    margin-right: 0%;
+}
+
+li {
+    display: inline;
+    padding: 0.5em;
+}
+
+#footer {
+    background-color: #efefef;
+    padding: 0.5em 0;
+}
+
+#feature, .article {
+    height: 10em;
+    margin-bottom: 1em;
+    background-color: #efefef;
+}
+
