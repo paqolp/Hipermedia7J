@@ -1,0 +1,5 @@
++ Caso de estudio 1
+- Un trabajador desea tomar el curso Uso de Plataforma Google Drive para aprender a administrar los 
+documentos del trabajo.
+- Él o ella planea estudiar dos horas los días martes y viernes, y hacer la tarea o exámenes los sábados, 
+desde su casa.

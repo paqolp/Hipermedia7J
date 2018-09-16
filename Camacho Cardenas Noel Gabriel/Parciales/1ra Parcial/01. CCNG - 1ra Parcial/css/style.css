@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200");
+
+body{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  
+}
+h1 {
+  text-align: center;
+  font-family: Raleway;
+  color: #34495e;
+  margin: 50px;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: rgb(5, 129, 61);
+}
+
+.bloc { 
+  display:inline-block; 
+  overflow:hidden; 
+ }
+ .bloc input{
+  background-color: red;
+  color: white;
+
+ }
+.bloc select { 
+  padding:10px;
+   margin:-5px -20px -5px -5px; 
+  }
+
+
+.seguir-estudiando{
+  text-align: right;
+  margin-right: 20vw;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+
+}
+.container {
+  flex-direction: column;
+}
+div.item {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 410px;
+  width: 100%;
+  background:whitesmoke;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+div.item * {
+  box-sizing: border-box;
+}
+
+div.item img {
+  max-width: 100%;
+  vertical-align: top;
+  height: 210px;
+}
+
+div.item i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  font-size: 34px;
+  color: #000000;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #ffffff;
+}
+
+div.item a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+
+
+div.item:hover img {
+  opacity: 0.3;
+  filter: grayscale(100%);
+}
+
+div.item * {
+  transition: all 0.35s ease-in-out;
+}
+
+div.item i {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+div.item:hover i {
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.footer {
+  height: 50px;
+  background: #666;
+  color: #fff;
+}
+
+
+.parent {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+
+  
+}
+.parent > div {
+  flex: 1;
+}
+.right{
+  text-align: left;
+}
