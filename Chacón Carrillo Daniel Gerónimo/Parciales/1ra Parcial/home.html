@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div style="position: fixed; width: 100%" class="header box-shadow">
+        <a href="#" class="logo">MOOC</a>
+        <div>
+            <a href="#">
+                <img src="./img/menu.png" alt="categorias">
+            </a>
+        </div>
+        <div style="display: inline-block; padding-top: 11px; width: 40%; margin: auto">
+            <form action="">
+                <div>
+                    <input style="padding: 7px; width: 100%; border-radius: 25px; border: none" type="text" placeholder="Buscar cursos">
+                </div>
+            </form>
+        </div>
+        <div class="header-right">
+            <a href="#"><img src="./img/user.png" alt="carrito"></a>
+            <a href="login.html">Cerrar sesión</a>
+        </div>
+    </div>
+    <div class="bg"></div>
+    <div style="position: absolute; top: 51%; left: 15px;">
+        <h1>Bienvenido!</h1>
+    </div>
+    <section>
+        <div>
+            <h3 style="margin-bottom: 0px">Mis cursos</h3>
+            <hr style="border: 1px solid; color: #3F51B5">
+            <div class="container-flex">
+                <p>¡Vaya parece que aun no te haz inscrito a ningun curso!</p>
+            </div>
+        </div>
+        <div>
+            <h3 style="margin-bottom: 0px">Cursos sugeridos</h3>
+            <hr style="border: 1px solid; color: #3F51B5">
+            <div style="margin-bottom: 10px" class="container-flex">
+                <div>
+                    <a href="cursoPage.html">
+                        <div style="background-color: #F44336" class="cursoDiv container-flex">
+                            <img src="./img/play-sign.png" width="85px" alt="">
+                        </div>
+                        <div>
+                            <label style="margin-left: 7px; cursor: pointer;">Curso de uso de plataforma google drive</label>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <div style="background-color: #E91E63" class="cursoDiv container-flex">
+                        <img src="./img/play-sign.png" width="85px" alt="">
+                    </div>
+                    <div>
+                        <label style="margin-left: 7px">Curso de ionic</label>
+                    </div>
+                </div>
+                <div>
+                    <div style="background-color: #9C27B0" class="cursoDiv container-flex">
+                        <img src="./img/play-sign.png" width="85px" alt="">
+                    </div>
+                    <div>
+                        <label style="margin-left: 7px">Curso de unity</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
