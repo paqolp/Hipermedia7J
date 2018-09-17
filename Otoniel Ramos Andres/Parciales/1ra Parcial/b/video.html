@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../source/styles.css">
+    <link rel="stylesheet" href="../source/c1.css">
+    <link rel="stylesheet" type="text/css" href="../source/video.css">
+    <title>Video</title>
+</head>
+<body>
+    <nav class="main-nav main-container" id="nav">
+		<ul class="main-menu">
+			<a href="../main.html" class="main-menu__link" class="border">Inicio</a>
+			<a href="#cursosA" class="main-menu__link" class="border">Cursos A</a></li>
+			<a href="#cursosB" class="main-menu__link" class="border">Cursos B</a>
+			<a href="#cursosC" class="main-menu__link" class="border">Cursos C</a>
+			<a href="../main.html" class="main-menu__link" class="border last">Regresar</a>
+            <a href="../login.html" class="main-menu__link" class="border last">Cerrar Sesion</a>
+		</ul>
+    </nav>
+
+    <div class="main-banner">
+	    <div class="main-container main-banner__data-container"></div>
+    </div>
+
+    <main class="main">
+        <div class="main-cont ">
+            <div class="m-cont-video">
+                <div class="v-cont">
+                    <img src="../img/logo.jpg" alt="" class="video-img">
+                    <div class="banner"></div>
+                    <div class="btn-play"><strong>PLAY</strong></div>
+                </div>
+            </div>
+
+            <div class="container">
+              <form action="#">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="fname">Nombre</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Nombres(s)..">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="lname">Apellido</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Apellido(s)..">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="country">Estado</label>
+                  </div>
+                  <div class="col-75">
+                    <select id="country" name="country">
+                      <option value="Colima">Colima</option>
+                      <option value="Guadalajara">Guadalajara</option>
+                      <option value="Mexico">Mexico</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="subject">Comentario</label>
+                  </div>
+                  <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Comentario.." style="height:200px"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <input type="submit" value="Enviar">
+                </div>
+              </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer"> 
+            <div class="footer_vw_info main-conteiner main-footer__inner">
+                <p>	© FAKE INC. 2018</p>
+                <p>	5698741359</p>
+    </footer>
+</body>
+</html>
