@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon shortcut" href="../img/favicon.png">
+    <link href="../css/styles.css" rel="stylesheet">
+    <title>Cursos FAKE</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html" title="Inicio">
+                        <img class="nav-logo" src="../img/network.png">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/courses.html" alt="Cursos" title="Cursos">
+                        <i class="material-icons">
+                            video_library
+                        </i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html" alt="Cerrar sesión" title="Cerrar sesión">
+                        <i class="material-icons">
+                            account_circle
+                        </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Courses -->
+    <div class="container">
+        <!-- Horizontal navtab -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                    aria-selected="true">Unidad 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                    aria-selected="false">Unidad 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+                    aria-selected="false">Unidad 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="grade-tab" data-toggle="tab" href="#grade" role="tab" aria-controls="grade"
+                    aria-selected="false">Calificación</a>
+            </li>
+        </ul>
+        <!-- Vertical navtab -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row">
+                    <div class="col-3">
+                        <!-- Links to tabs -->
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                                role="tab" aria-controls="v-pills-home" aria-selected="true">Subunidad 1</a>
+                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                                role="tab" aria-controls="v-pills-profile" aria-selected="false">Subunidad 2</a>
+                            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+                                role="tab" aria-controls="v-pills-messages" aria-selected="false">Subunidad 3</a>
+                            <a class="nav-link" id="v-pills-exam-tab" data-toggle="pill" href="#v-pills-exam" role="tab"
+                                aria-controls="v-pills-exam" aria-selected="false">Examen</a>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <!-- Content of vertical tabs -->
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                <div class="course-container">
+                                    <img class="course-img" src="../img/dummy-img.jpg">
+                                    <p class="course-title">Trabajo 1</p>
+                                    <p class="course-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore...</p>
+                                    <a href="course-main.html" class="btn btn-success text-white d-block mx-auto">Ir</a>
+                                </div>
+                                <div class="course-container">
+                                    <img class="course-img" src="../img/dummy-img.jpg">
+                                    <p class="course-title">Trabajo 2</p>
+                                    <p class="course-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore...</p>
+                                    <a href="course-main.html" class="btn btn-success text-white d-block mx-auto">Ir</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                <div class="course-container">
+                                    <img class="course-img" src="../img/dummy-img.jpg">
+                                    <p class="course-title">Trabajo 1</p>
+                                    <p class="course-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore...</p>
+                                    <a href="course-main.html" class="btn btn-success text-white d-block mx-auto">Ir</a>
+                                </div>
+                                <div class="course-container">
+                                    <img class="course-img" src="../img/dummy-img.jpg">
+                                    <p class="course-title">Trabajo 2</p>
+                                    <p class="course-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore...</p>
+                                    <a href="course-main.html" class="btn btn-success text-white d-block mx-auto">Ir</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                <div class="course-container">
+                                    <img class="course-img" src="../img/dummy-img.jpg">
+                                    <p class="course-title">Trabajo 1</p>
+                                    <p class="course-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore...</p>
+                                    <a href="course-main.html" class="btn btn-success text-white d-block mx-auto">Ir</a>
+                                </div>
+                                <div class="course-container">
+                                    <img class="course-img" src="../img/dummy-img.jpg">
+                                    <p class="course-title">Trabajo 2</p>
+                                    <p class="course-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore...</p>
+                                    <a href="course-main.html" class="btn btn-success text-white d-block mx-auto">Ir</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-exam" role="tabpanel" aria-labelledby="v-pills-exam-tab">
+                                <p>Tu examen será activado cuando termines todas las subunidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                                role="tab" aria-controls="v-pills-home" aria-selected="true">Subunidad 1</a>
+                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                                role="tab" aria-controls="v-pills-profile" aria-selected="false">Subunidad 2</a>
+                            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+                                role="tab" aria-controls="v-pills-messages" aria-selected="false">Subunidad 3</a>
+                            <a class="nav-link" id="v-pills-exam-tab" data-toggle="pill" href="#v-pills-exam" role="tab"
+                                aria-controls="v-pills-exam" aria-selected="false">Examen</a>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                <div class="course-container">
+                                    <img class="course-img" src="../img/dummy-img.jpg">
+                                    <p class="course-title">Trabajo 1</p>
+                                    <p class="course-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore...</p>
+                                    <a href="course-main.html" class="btn btn-success text-white d-block mx-auto">Ir</a>
+                                </div>
+                                <div class="course-container">
+                                    <img class="course-img" src="../img/dummy-img.jpg">
+                                    <p class="course-title">Trabajo 2</p>
+                                    <p class="course-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore...</p>
+                                    <a href="course-main.html" class="btn btn-success text-white d-block mx-auto">Ir</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                <div class="course-container">
+                                    <img class="course-img" src="../img/dummy-img.jpg">
+                                    <p class="course-title">Trabajo 1</p>
+                                    <p class="course-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore...</p>
+                                    <a href="course-main.html" class="btn btn-success text-white d-block mx-auto">Ir</a>
+                                </div>
+                                <div class="course-container">
+                                    <img class="course-img" src="../img/dummy-img.jpg">
+                                    <p class="course-title">Trabajo 2</p>
+                                    <p class="course-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore...</p>
+                                    <a href="course-main.html" class="btn btn-success text-white d-block mx-auto">Ir</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                <div class="course-container">
+                                    <img class="course-img" src="../img/dummy-img.jpg">
+                                    <p class="course-title">Trabajo 1</p>
+                                    <p class="course-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore...</p>
+                                    <a href="course-main.html" class="btn btn-success text-white d-block mx-auto">Ir</a>
+                                </div>
+                                <div class="course-container">
+                                    <img class="course-img" src="../img/dummy-img.jpg">
+                                    <p class="course-title">Trabajo 2</p>
+                                    <p class="course-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore...</p>
+                                    <a href="course-main.html" class="btn btn-success text-white d-block mx-auto">Ir</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-exam" role="tabpanel" aria-labelledby="v-pills-exam-tab">
+                                <p>Tu examen será activado cuando termines todas las subunidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                                role="tab" aria-controls="v-pills-home" aria-selected="true">Subunidad 1</a>
+                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                                role="tab" aria-controls="v-pills-profile" aria-selected="false">Subunidad 2</a>
+                            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+                                role="tab" aria-controls="v-pills-messages" aria-selected="false">Subunidad 3</a>
+                            <a class="nav-link" id="v-pills-exam-tab" data-toggle="pill" href="#v-pills-exam" role="tab"
+                                aria-controls="v-pills-exam" aria-selected="false">Examen</a>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                <div class="course-container">
+                                    <img class="course-img" src="../img/dummy-img.jpg">
+                                    <p class="course-title">Trabajo 1</p>
+                                    <p class="course-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore...</p>
+                                    <a href="course-main.html" class="btn btn-success text-white d-block mx-auto">Ir</a>
+                                </div>
+                                <div class="course-container">
+                                    <img class="course-img" src="../img/dummy-img.jpg">
+                                    <p class="course-title">Trabajo 2</p>
+                                    <p class="course-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore...</p>
+                                    <a href="course-main.html" class="btn btn-success text-white d-block mx-auto">Ir</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                <div class="course-container">
+                                    <img class="course-img" src="../img/dummy-img.jpg">
+                                    <p class="course-title">Trabajo 1</p>
+                                    <p class="course-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore...</p>
+                                    <a href="course-main.html" class="btn btn-success text-white d-block mx-auto">Ir</a>
+                                </div>
+                                <div class="course-container">
+                                    <img class="course-img" src="../img/dummy-img.jpg">
+                                    <p class="course-title">Trabajo 2</p>
+                                    <p class="course-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore...</p>
+                                    <a href="course-main.html" class="btn btn-success text-white d-block mx-auto">Ir</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                <div class="course-container">
+                                    <img class="course-img" src="../img/dummy-img.jpg">
+                                    <p class="course-title">Trabajo 1</p>
+                                    <p class="course-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore...</p>
+                                    <a href="course-main.html" class="btn btn-success text-white d-block mx-auto">Ir</a>
+                                </div>
+                                <div class="course-container">
+                                    <img class="course-img" src="../img/dummy-img.jpg">
+                                    <p class="course-title">Trabajo 2</p>
+                                    <p class="course-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore...</p>
+                                    <a href="course-main.html" class="btn btn-success text-white d-block mx-auto">Ir</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-exam" role="tabpanel" aria-labelledby="v-pills-exam-tab">
+                                <p>Tu examen será activado cuando termines todas las subunidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="grade" role="tabpanel" aria-labelledby="grade-tab">
+                <table class="table table-sm table-responsive">
+                    <thead>
+                        <th># Unidad</th>
+                        <th>Subunidad 1</th>
+                        <th>Subunidad 2</th>
+                        <th>Subunidad 3</th>
+                        <th>Calificación</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>7.5</td>
+                            <td>9.6</td>
+                            <td class="table-danger">5.8</td>
+                            <td class="table-danger">7.6</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>6.5</td>
+                            <td>9.6</td>
+                            <td>8.8</td>
+                            <td class="table-success">8.6</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>8.5</td>
+                            <td>7.6</td>
+                            <td>8.9</td>
+                            <td class="table-success">8.2</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">Calificación final</td>
+                            <td class="table-success">8.3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- Uncomment in order to complete functionality of nav-tabs -->
+<!--
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>-->

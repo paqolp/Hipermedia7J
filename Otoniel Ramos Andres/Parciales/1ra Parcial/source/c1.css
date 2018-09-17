@@ -1,0 +1,123 @@
+.main-course{
+    grid-template-areas:'mainC mainC mainC .';
+}
+
+.main-cont{
+    /*border: 1px solid red;*/
+    padding-left: 10%;
+}
+
+.sub-title,
+.info-title{
+    color:#53575A;
+}
+
+.task{
+
+}
+
+.task-list{		
+	
+}
+
+.list-item{
+	border-bottom: 1px solid #DFE0E0;
+    color: #535759;
+    list-style: none;
+    display: flex; 
+}
+
+li.list-item > div.item-name > a:visited{
+	/*color: #4db5ff; ncesito muchas paginas para que funciones :c*/
+}
+
+.item-name > a{
+	color: #535759;
+}
+
+.item-name,
+.item-btn,
+.item-time,
+.info-title{
+	/*border: 1px solid black;*/
+	margin: 19px;
+	flex-basis:50%;
+}
+
+.item-btn,
+.item-time{
+	flex-basis: 15%;
+}
+
+.item-btn{
+	padding: 3px 5px;
+	color: #4db5ff;
+	border: 1px solid #4db5ff;
+}
+
+.item-btn:hover{
+	color: #fff;
+	background: #4db5ff;
+}
+
+a{
+	text-decoration: none;
+}
+
+.info{
+	background-color: white;
+	width: 20%;
+	border-radius: 25px;
+	position: fixed;
+	right: 10%;
+	top: 8%;
+	z-index: 2;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.info > img{
+	border-radius: 25px 25px 0 0;
+}
+
+.info-img{
+	width: 100%;
+}
+
+.info-title{
+	text-align: center;
+}
+
+.info-desc{
+	color: #535759;
+	text-align: justify;
+	padding: 10px;
+}
+
+div.info{
+	-webkit-animation:3s fade 1;
+}
+
+@-webkit-keyframes fade{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+.exam-btn{
+	color: #4db5ff;
+	border: 1px solid #4db5ff;
+	padding: 5px;
+	width: 50%;
+	margin:auto;
+	margin-top: 3px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.exam-btn:hover{
+	background-color:  #4db5ff;
+	color: #fff;
+}
