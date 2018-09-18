@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Hotel Tresvagos - Vive una experiencia única</title>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Tresvagos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hoteles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reservaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Iniciar sesión</a>
+            </li>
+            <li class="nav-item">
+              <button id="changeTheme" class="btn btn-light" onclick="changeTheme()">Cambiar tema</button>
+              
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Masthead -->
+    <header id="header" class="masthead text-white text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-9 mx-auto">
+            <h1 class="mb-auto">¡Bienvenido a Hoteles Tresvagos!</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Features -->
+    <section id="features" class="features-icons bg-white text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="features-icons-item mx-auto mb-5">
+              <div class="features-icons-icon d-flex">
+                <i id="icon-1" class="icon-calendar m-auto text-primary"></i>
+              </div>
+              <h3>Reservaciones</h3>
+              <p class="lead mb-0">¡Reserva tu habitación ideal desde la comodidad de tu casa!</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="features-icons-item mx-auto mb-5">
+              <div class="features-icons-icon d-flex">
+                <i id="icon-2" class="icon-location-pin m-auto text-primary"></i>
+              </div>
+              <h3>Encuéntranos</h3>
+              <p class="lead mb-0">¡Contamos con diversos hoteles alrededor del mundo!</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="features-icons-item mx-auto mb-5">
+              <div class="features-icons-icon d-flex">
+                <i id="icon-3" class="icon-credit-card m-auto text-primary"></i>
+              </div>
+              <h3>Métodos de pago</h3>
+              <p class="lead mb-0">¡Contamos con diversos métodos de pago para tu comodidad!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Locations -->
+    <section id="showcase" class="showcase">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+          <div id="destination-1-col-1" class="col-6 order-2 showcase-img" style="background-image: url('img/destination_1.jpg')"></div>
+          <div id="destination-1-col-2" class="col-6 order-1 my-auto showcase-text">
+            <h2>Habitaciones</h2>
+            <p class="lead mb-0">Disfruta de nuestras habitaciones de primera clase, las cuales cuentan con todas las comodidades necesarias para hacer de tu hospedaje toda una experiencia placentera.</p>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div id="destination-2-col-1" class="col-6 order-1 showcase-img" style="background-image: url('img/destination_2.jpg');"></div>
+          <div id="destination-2-col-2" class="col-6 order-2 my-auto showcase-text">
+            <h2>Restaurantes</h2>
+            <p class="lead mb-0">Cada uno de nuestros hoteles cuenta con restaurantes de primera clase, donde podrás probar la más alta cocina que ofrecemos, de talla nacional e internacional.</p>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div id="destination-3-col-1" class="col-6 order-2 showcase-img" style="background-image: url('img/destination_3.jpg');"></div>
+          <div id="destination-3-col-2" class="col-6 order-1 my-auto showcase-text">
+            <h2>Recreación</h2>
+            <p class="lead mb-0">Contamos con diversos lugares y actividades recreacionales a las cuales podrás tener acceso de forma ilimitada.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rooms -->
+    <section id="rooms" class="testimonials text-center bg-white">
+      <div class="container">
+        <h2 class="mb-5">Habitaciones</h2>
+        <div class="row">
+          <div class="col-4">
+            <div class="testimonial-item mx-auto mb-5">
+              <img class="img-fluid rounded-circle mb-3" src="img/room_1.jpg">
+              <h5>Ejecutiva</h5>
+              <p class="font-weight mb-1"><b>Precio: $9999.99</b></p>
+              <p class="font-weight-light mb-0">Increíble habitación si te encuentras en un viaje de negocios.</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="testimonial-item mx-auto mb-5">
+              <img class="img-fluid rounded-circle mb-3" src="img/room_2.jpg">
+              <h5>Vista al mar</h5>
+              <p class="font-weight mb-1"><b>Precio: $9999.99</b></p>
+              <p class="font-weight-light mb-0">Increbíble habitación con una hermosa vista al mar y ambiente relajante.
+              </p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="testimonial-item mx-auto mb-5">
+              <img class="img-fluid rounded-circle mb-3" src="img/room_3.jpg">
+              <h5>Familiar</h5>
+              <p class="font-weight mb-1"><b>Precio: $9999.99</b></p>
+              <p class="font-weight-light mb-0">Increbíble habitación para un viaje familiar, con lugares espaciosos y seguros.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact with us -->
+    <section id="contact-us" class="call-to-action bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 text-center mb-auto mt-auto">
+            <h1>¡Contáctanos!</h1>
+          </div>
+          <div class="col-6">
+            <h3 class="text-center">Envíanos un mensaje</h3>
+            <form class="mb-auto mt-auto pull-left">
+              <div class="form-group">
+                <label>Nombre:</label>
+                <input class="form-control" type="text" placeholder="Ingresa tu nombre completo">
+              </div>
+              <div class="form-group">
+                <label>Correo electrónico:</label>
+                <input class="form-control" type="email" placeholder="Ingresa tu correo electrónico">
+              </div>
+              <div class="form-group">
+                <label>Mensaje:</label>
+                <textarea class="form-control" rows="5" placeholder="Ingresa tu mensaje"></textarea>
+              </div>
+              <div class="row">
+                <div class="col-8"></div>
+                <div class="col-4">
+                  <button id="send-message" class="btn btn-success btn-outline-success btn-block">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 h-100 text-center my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a id="about-us" href="#">Sobre nosotros</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a id="contact" href="#">Contácto</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a id="terms-use" href="#">Terminos de uso</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a id="privacy-policy" href="#">Políticas de privacidad</a>
+              </li>
+            </ul>
+            <p id="copyright" class="text-muted mb-4">&copy; Hoteles Tresvagos. Todos los derechos reservados.</p>
+          </div>
+          <div class="col-6 h-100 text-center text-lg-right my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-3">
+                <a id="facebook" href="#">
+                  <i class="fab fa-facebook fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a id="twitter" href="#">
+                  <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a id="instagram" href="#">
+                  <i class="fab fa-instagram fa-2x fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
