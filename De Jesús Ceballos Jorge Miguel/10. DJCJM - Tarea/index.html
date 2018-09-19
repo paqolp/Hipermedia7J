@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<title>Hotel Maravilla</title>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
+<link rel="shortcut icon" href="https://marketplace.canva.com/MAB7kz1-tzE/1/thumbnail_large/canva-hotel-sign-icon-MAB7kz1-tzE.png" />
+<link rel='stylesheet' href='css/style.css'>
+<script src='js/script.js'></script>
+
+<body>
+
+    <nav class='w3-sidebar w3-collapse w3-top w3-large w3-padding' id='mySidebar'>
+        <a href='javascript:void(0)' onclick='w3_close()' class='w3-button w3-hide-large w3-display-topleft'>x</a>
+        <div class='w3-container'>
+            <h3 class='w3-padding-64 text-white'>
+                <b>Hotel Maravilla</b>
+            </h3>
+        </div>
+        <div class='w3-bar-block'>
+            <a onclick='neutral()' class='w3-bar-item w3-button w3-hover-white text-white'>Neutral</a>
+            <a onclick='colorful()' class='w3-bar-item w3-button w3-hover-white text-white'>Colorful</a>
+            <a onclick='dark()' class='w3-bar-item w3-button w3-hover-white text-white'>Dark</a>
+        </div>
+    </nav>
+
+    <header class='w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding'>
+        <a href='javascript:void(0)' class='w3-button w3-red w3-margin-right' onclick='w3_open()'>☰</a>
+        <span>Hotel Maravilla</span>
+    </header>
+
+    <div class='w3-overlay w3-hide-large' onclick='w3_close()' id='myOverlay'></div>
+
+    <div class='w3-main'>
+
+        <div class='w3-container' id='showcase'>
+            <h1 id='title' class='w3-jumbo'>Hotel Maravilla</h1>
+            <h1 class='w3-xxxlarge text-change'>Tu mejor opción.</h1>
+            <hr class='w3-round'>
+        </div>
+
+        <div class='w3-row-padding'>
+            <div class='w3-half'>
+                <img src='img/1.jpg' id='img1'>
+            </div>
+            <div class='w3-half'>
+                <img src='img/2.jpg' id='img2'>
+            </div>
+        </div>
+
+        <div class='w3-container' id='services'>
+            <h1 class='w3-xxxlarge text-change'>Servicios.</h1>
+            <hr class='w3-round'>
+            <p>En este hotel sustentable estarás a 2 km de los centros comerciales más famosos del estado, y a menos de 5 kilómetros
+                de los lugares de interés más populares y bellos que podrías imaginar. Este hotel para no fumadores dispone
+                de:
+            </p>
+            <ul>
+                <li>Restaurante 5 estrellas</li>
+                <li>Piscina al aire libre</li>
+                <li>Estacionamiento gratuito</li>
+                <li>WiFi de alta velocidad dentro del hotel</li>
+                <li>Servicio de traslado al aeropuerto</li>
+                <li>Bar de bebidas internacionales</li>
+                <li>Cafetería tipo buffet</li>
+                <li>Gimnasio con áreas de spinning, crossfit y levantamiento de pesas</li>
+            </ul>
+            <p>
+                <b>Además, cada habitación cuenta con:</b>
+            </p>
+        </div>
+
+        <div class='w3-row-padding w3-grayscale'>
+            <div class='w3-col m4 w3-margin-bottom'>
+                <div class='card'>
+                    <img src='img/service.jpg'>
+                    <div class='w3-container'>
+                        <h3>Servicio a la habitación</h3>
+                        <p class='w3-opacity'>Satisface tus deseos</p>
+                        <p>Pide lo que quieras desde la comodidad de tu habitación y haremos lo posible por conseguirlo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class='w3-col m4 w3-margin-bottom'>
+                <div class='card'>
+                    <img src='img/tv.jpg'>
+                    <div class='w3-container'>
+                        <h3>Smart TV con cable</h3>
+                        <p class='w3-opacity'>Entretenimiento sin límites</p>
+                        <p>Mira los mejores canales con la mejor calidad visual y sonora posibles.</p>
+                    </div>
+                </div>
+            </div>
+            <div class='w3-col m4 w3-margin-bottom'>
+                <div class='card'>
+                    <img src='img/safe.jpg'>
+                    <div class='w3-container'>
+                        <h3>Caja fuerte con lector de huella digital</h3>
+                        <p class='w3-opacity'>Protege tus pertenencias</p>
+                        <p>Tecnología de punta desarrollada por el mejor proveedor de seguridad que hay.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='w3-container' id='contact'>
+            <h1 class='w3-xxxlarge text-change'>Reservaciones</h1>
+            <hr class='w3-round'>
+            <p>¡Ponte en contacto con nosotros para agendar tu reservación de manera rápida, sencilla y directa! Un operador
+                se pondrá en contacto con usted lo más pronto posible para confirmar los detalles estadía.</p>
+            <form action='mailto:jde_jesus1@ucol.mx' method='post'>
+                <div class='w3-section'>
+                    <p>Nombre</p>
+                    <input class='w3-input w3-border' type='text' name='Name' required>
+                </div>
+                <div class='w3-section'>
+                    <p>Correo electrónico</p>
+                    <input class='w3-input w3-border' type='email' name='Email' required>
+                </div>
+                <div class='w3-section'>
+                    <p>Información de la reservación (fechas, número de personas, tipo de habitación que en la que le gustaría
+                        hospedarse, etc)</p>
+                    <input class='w3-input w3-border' type='text' name='Message' required>
+                </div>
+                <button id='boton' class='w3-button w3-block w3-padding-large w3-margin-bottom' type='submit'>Realizar reservación</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class='w3-container w3-padding-32' id='footer'></div>
+
+</body>
+
+</html>

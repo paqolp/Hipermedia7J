@@ -1,0 +1,87 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Poppins', sans-serif
+}
+
+body {
+    font-size: 16px;
+}
+
+.w3-half img {
+    margin-bottom: -6px;
+    margin-top: 16px;
+    opacity: 0.8;
+    cursor: pointer
+}
+
+.w3-half img:hover {
+    opacity: 1
+}
+
+#mySidebar {
+    z-index: 3;
+    width: 300px;
+    font-weight: bold;
+}
+
+nav>a {
+    width: 100%;
+    font-size: 22px;
+}
+
+#myOverlay {
+    cursor: pointer;
+}
+
+div[class='w3-main'] {
+    margin-left: 340px;
+    margin-right: 40px;
+}
+
+#footer {
+    margin-top: 75px;
+    padding-right: 58px;
+}
+
+img {
+    width: 100%;
+}
+
+#packages {
+    margin-top: 75px;
+}
+
+hr {
+    width: 50px;
+    border: 5px solid red;
+}
+
+#services,
+#designers,
+#contact {
+    margin-top: 75px;
+}
+
+#showcase {
+    margin-top: 80px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+div[class='w3-half'] > img {
+    height: 32em;
+}
+
+.text-white {
+    color: #ffffff !important;
+}
+
+button {
+    color: #ffffff !important;
+}
