@@ -1,0 +1,178 @@
+html, body{
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+}
+
+body {
+
+    background-color: rgb(12, 36, 0);
+
+}
+
+a {
+    
+    color: white;
+    text-decoration: none;
+
+}
+
+table, th, td {
+
+    border-collapse: collapse;
+    text-align: center;
+    color: white;
+
+}
+
+th{
+    
+    background-color: rgb(36, 102, 6);
+    
+}
+
+td{
+    
+    background-color: rgb(86, 119, 71);    
+    color: black;
+    
+}
+
+button {
+
+    background-color: rgb(14, 40, 2);
+    color: white;
+    margin: 2%;
+
+}
+
+h2 {
+
+    font-size: 90%;
+
+}
+
+img {
+
+    height: 60%;
+    width: 100%;
+
+}
+
+.Rellenar {
+
+    width: 100%; 
+    height: 100%;
+
+}
+
+.SeccionSuperior {
+
+    height: 4em; 
+    width: 100%;
+    position: fixed; 
+    z-index: 1;
+    border-bottom: 1px solid black;
+    background-color: darkred;
+
+}
+
+.SeccionSuperior2 {
+
+    top: 4em;
+    width: 100%;
+    height: 4em; 
+    position: fixed; 
+    z-index: 1;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+
+}
+
+.SeccionContenido {
+
+    padding: 5%; 
+
+}
+
+.Contenido {
+
+    background-color: rgb(86, 119, 71);      
+    overflow-y: auto;
+    text-align: center;
+
+}
+
+.ContenedorTitulo {
+
+    text-align: center;
+    padding: 1%;
+    background-color: darkgreen;
+
+}
+
+.Curso {
+
+    display: block;
+    position: relative;
+    float: left;
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(17, 0, 253);
+    margin: 1%;
+
+}
+
+.Footer {
+
+    height: 30%; 
+    text-align: center; 
+    background-color: black;
+    color: white;
+
+}
+
+.CentrarTitulo {
+
+    position: relative; 
+    top: 50%; 
+
+}
+
+.TituloUnidad {
+
+    background-color: rgb(31, 75, 40);   
+    text-align: center;
+    overflow-y: auto;
+
+}
+
+.TituloSubUnidad {
+
+    background-color: rgb(63, 131, 78);       
+    text-align: center;
+    overflow-y: auto;
+
+}
+
+.TableRow {
+
+    height:3em; 
+    color: white;
+    width: 50%;
+
+}
+
+.CentrarElementos {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
