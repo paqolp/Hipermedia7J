@@ -1,0 +1,108 @@
+
+body{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: rgb(5, 129, 61);
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.red .flex-item img{
+  padding: 5px;
+  width: 400px;
+  height: 300px;
+  margin-top: 10px;
+  
+  line-height: 150px;
+  font-weight: bold;
+  font-size: 3em; 
+}
+
+.green .flex-item img{
+  padding: 5px;
+  width: 450px;
+  height: 350px;
+  margin-top: 10px;
+  
+  line-height: 150px;
+  font-weight: bold;
+  font-size: 3em; 
+}
+
+.gray .flex-item img{
+  padding: 5px;
+  width: 500px;
+  height: 400px;
+  margin-top: 10px;
+  
+  line-height: 150px;
+  font-weight: bold;
+  font-size: 3em; 
+}
+
+.red {
+    background-color: red;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+
+    
+  }
+
+  .green {
+    background-color: green;
+    font-size: 44px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }
+  .gray {
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+
+
+
+
+  .footer {
+    height: 50px;
+    background: #666;
+    color: #fff;
+  }
+  

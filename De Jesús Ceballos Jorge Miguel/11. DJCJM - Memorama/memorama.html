@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MiMemorama</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+
+    <section class="SeccionSuperior CentrarElementos">
+
+        <button onclick="Resetear()">Revolver</button>
+
+    </section>
+
+    <section class="SeccionSuperiorFake"></section>
+
+    <section class="SeccionContenido">
+
+        <section class="ContenedorTitulo">
+            <h1>Mi memorama de fauna salvaje</h1>
+        </section>
+
+        <section class="ContenedorTitulo">
+
+            <section id="contenedorMemorama" class="Memorama" onload="LlenarMemorama(this);"></section>
+
+        </section>
+
+    </section>
+    <section class="Footer">
+        <h3 class="CentrarTitulo">®2018 Facultad de Telematica. All Rights Reserved.</h3>
+    </section>
+
+</html>
