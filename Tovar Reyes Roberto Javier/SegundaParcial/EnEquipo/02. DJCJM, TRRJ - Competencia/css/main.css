@@ -1,0 +1,122 @@
+html, body {
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: white;
+
+}
+
+body {
+
+    background-color: rgb(12, 36, 0);
+
+}
+
+button {
+
+    background-color: rgb(14, 40, 2);
+    color: white;
+    margin: 2%;
+
+}
+
+
+div {
+
+    position: relative;
+    float: left;
+    border: 1px solid black;
+    width: 24%;
+    height: 6em;
+    text-align: center;
+    background-color: rgb(93, 131, 74);
+
+}
+
+img {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+section.Memorama {
+
+    margin: 2%;
+    padding: 2%;
+    border: 1px solid black;
+    display: inline-block;
+    background-color: rgb(57, 97, 37);
+
+}
+
+.CentrarElementos {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.SeccionSuperior {
+
+    height: 4em; 
+    width: 100%;
+    position: fixed; 
+    z-index: 1;
+    border-bottom: 1px solid black;
+    background-color: rgb(68, 21, 21);
+
+}
+
+.SeccionSuperiorFake {
+
+    height: 4em;
+
+}
+
+.CentrarTitulo {
+
+    position: relative; 
+    top: 50%; 
+
+}
+
+.Footer {
+
+    height: 30%; 
+    text-align: center; 
+    background-color: black;
+    color: white;
+
+}
+
+.SeccionContenido {
+
+    padding: 5%; 
+
+}
+
+.Contenido {
+
+    background-color: rgb(86, 119, 71);      
+    overflow-y: auto;
+    text-align: center;
+
+}
+
+.ContenedorTitulo {
+
+    text-align: center;
+    padding: 1%;
+    background-color: darkgreen;
+
+}
+
+.Rellenar {
+
+    width: 100%; 
+    height: 100%;
+
+}
