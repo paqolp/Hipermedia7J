@@ -1,0 +1,15 @@
+{
+  "name": "memorama",
+  "version": "1.0.0",
+  "description": "ejercicio memorama",
+  "main": "index.js",
+  "dependencies": {
+    "bulma": "^0.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

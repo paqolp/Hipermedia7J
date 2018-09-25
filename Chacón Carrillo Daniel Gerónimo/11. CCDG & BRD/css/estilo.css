@@ -1,0 +1,32 @@
+@import 'colors.css';
+
+#fondo.bg-img {
+    background-image: url("../img/independencia-mexico.jpg") !important;
+
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+div.title {
+    text-align: center !important;
+    text-shadow: 1px 3px 3px black;
+    margin-bottom: 200px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-text {
+    text-align: justify;
+}
+
+div.content p{
+    font-size: 20px;
+}
