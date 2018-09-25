@@ -1,0 +1,109 @@
+* {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+body {
+    margin-top: 50px;
+}
+
+nav {
+    width: 300px !important;
+    font-weight: bold;
+    z-index: 3;
+}
+
+main {
+    margin-left: 340px;
+    margin-right: 40px;
+}
+
+a {
+    background: #ffffff !important;
+    margin-bottom: 1em !important;
+    opacity: .95;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+hr {
+    border: 3px solid;
+    opacity: .5;
+    width: 50px;
+}
+
+img {
+    margin-bottom: -6px;
+    margin-top: 16px;
+    cursor: pointer;
+    height: 32em;
+    width: 100%;
+}
+
+img:hover {
+    opacity: 0.7;
+}
+
+footer {
+    background-color: rgba(76, 175, 80, .5);
+    margin-top: 75px;
+    color: black;
+}
+
+.background-image {
+    background: gray url('../img/background.jpg') repeat 0 0;
+    -webkit-animation: slide 20s linear infinite;
+}
+
+.videoWrapper {
+    padding-bottom: 56.25%;
+    position: relative;
+    padding-top: 25px;
+    height: 0;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+a[href='#showcase'],
+#showcase+h1,
+#showcase+h1+hr {
+    color: #e91e63;
+}
+
+a[href='#video'],
+#video,
+#video+hr {
+    color: #9c27b0;
+}
+
+a[href='#photos'],
+#photos,
+#photos+hr {
+    color: #2196f3;
+}
+
+a[href='#game'],
+#game {
+    color: #4caf50;
+}
+
+#photos,
+#game {
+    margin-top: 1em;
+}
+
+@-webkit-keyframes slide {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -400px 0;
+    }
+}
