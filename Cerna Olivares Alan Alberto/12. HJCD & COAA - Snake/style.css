@@ -1,0 +1,19 @@
+canvas{
+display: inline;
+border: 1px dashed red;
+}
+
+body { 
+overflow: hidden;
+}
+
+
+#canvas-container {
+width: 100%;
+text-align:center;
+}
+
+h1{
+    text-align: center;
+}
+ 
