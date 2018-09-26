@@ -1,0 +1,34 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: arial;
+	background-color: #121212;
+}
+
+header{
+	width: 100%;
+	height: 56px;
+	background-color: #232323;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;	
+}
+
+.logoNav{
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+.buscarInput{
+	height: 26px;
+	width: 70%;
+}
+
+.icobuscar{
+	padding-top: 30px;
+}
+
+.usericos{
+	padding-top: 10px;
+	padding-right: 10px;
+}
