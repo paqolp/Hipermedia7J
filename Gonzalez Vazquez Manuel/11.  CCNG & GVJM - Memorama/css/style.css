@@ -1,0 +1,36 @@
+
+body{
+    text-align: center;
+}
+
+  div[name^="card"] {
+    height: 230px;
+    width: 400px;
+    margin: 5px;
+    display: inline-block;
+
+  }
+  
+  div.hidden {
+    background-color: #000;
+  }
+  
+  div.card1 {
+    background-image: url("../img/division1.png");
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+   
+  }
+  
+  div.card2 {
+    background-image: url("../img/division2.png");
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+  }
+  
+  div.card3 {
+    background-image: url("../img/division3.png");
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+
+  }

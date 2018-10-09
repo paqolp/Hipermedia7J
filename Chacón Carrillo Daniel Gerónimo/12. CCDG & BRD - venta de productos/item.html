@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>MKShop</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/shop-item.css" rel="stylesheet">
+
+</head>
+
+<body onload="onloadItem()">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">MKShop</a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-3">
+        <h1 class="my-4"></h1>
+        <div class="list-group">
+          <a href="index.html" class="list-group-item">Inicio</a>
+          <a href="carrito.html" class="list-group-item">Carrito</a>
+        </div>
+      </div>
+      <!-- /.col-lg-3 -->
+
+      <div class="col-lg-9">
+
+        <div class="card mt-4">
+          <div id="imageContainer" class="card-header">
+
+          </div>
+          <div id="itemInfoContainer" class="card-body">
+
+          </div>
+          <div id="footerContainer" class="card-footer">
+
+          </div>
+        </div>
+        <!-- /.card -->
+
+        <!--
+          <div class="card card-outline-secondary my-4">
+            <div class="card-header">
+              Product Reviews
+            </div>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+              <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+              <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+              <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+              <hr>
+              <a href="#" class="btn btn-success">Leave a Review</a>
+            </div>
+          </div>-->
+        <!-- /.card -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark" style="position: relative; bottom: -161px">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="info.js"></script>
+  <script src="localstorage.js"></script>
+
+  <script>
+    var globalName = '';
+    var itemName = getParameterByName('name');
+    var loc;
+    products = JSON.parse(localStorage.getItem('products'));
+    cart = JSON.parse(localStorage.getItem('cart'));
+    console.log(products);
+
+    function onloadItem() {
+      let i = 0;
+      for (; products[i].name != itemName; i++) {}
+
+      loadItemImage(products[i]);
+      loadInfoItem(products[i]);
+      loadItemStock(products[i]);
+
+      loc = i;
+    }
+
+    function getParameterByName(name) {
+      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+      return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    function loadInfoItem(product) {
+      let container = document.getElementById('itemInfoContainer');
+      var codigo = "";
+      codigo = "<h3 class='card-title text-center'>" + product.name + "</h3>" + "\n" +
+        "<h4>" + product.price + "</h4>" + "\n" +
+        "<h5> calificacion: " + product.stars + "/5</h5>" + "\n" +
+        "<p class='card-text'>" + product.description + "</p>" + "\n";
+      container.innerHTML = codigo;
+    }
+
+    function loadItemImage(product) {
+      let container = document.getElementById('imageContainer');
+      var codigo = "";
+      codigo = "<img src='" + product.image + "' alt=''>";
+      container.innerHTML = codigo;
+    }
+
+    function loadItemStock(product) {
+      let container = document.getElementById('footerContainer');
+      var codigo, cantidad = "";
+      let i = 1;
+      while (i <= product.stock) {
+        cantidad += "<option>" + i + "</option>\n";
+        i++;
+      }
+      codigo = "<form action='' class='inline-form'>" + "\n" +
+        "<select id='quantitySel' style='display:inline-block; top: 2px' class='form-control form-control-md col-2'>" +
+        "\n" +
+        cantidad +
+        "</select>" + "\n" +
+        "<button class='btn btn-success' onClick='addProducts()'>Agregar al carrito</button>" + "\n" +
+        "</form>" + "\n";
+      container.innerHTML = codigo;
+    }
+
+    function addProducts() {
+      globalName = getParameterByName('name');
+      const selectedQuantity = document.getElementById('quantitySel').value;
+      let actualQuantity = products[loc].stock - selectedQuantity;
+      products[loc].stock = actualQuantity;
+      itemName = globalName;
+      saveProducts(JSON.stringify(products));
+      cart.push({
+        name: itemName,
+        quantity: selectedQuantity,
+        price: products[loc].price
+      });
+      saveCart(JSON.stringify(cart));
+      console.log('cambios guardados');
+      onload();
+    }
+
+    
+  </script>
+
+</body>
+
+</html>
