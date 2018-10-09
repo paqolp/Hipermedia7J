@@ -1,0 +1,402 @@
+{
+   "productos": [
+       {
+           "imagen": "./img/g1.jpg",
+           "nombre": "American cat",
+           "descripcion": "El abisinio se describe mejor en una palabra, inquieto. No es un gato que se quede tranquilo sobre la falda de su dueño, esta raza insaciablemente curiosa está siempre en movimiento, excepto cuando comen o duermen. El abisinio es un atleta natural, con un cuerpo musculoso y sin miedo a las alturas. Es un compañero afectuoso, leal, ideal para para familias con niños mayores de 6 años.",
+           "costo": 300,
+           "reseña": "Es un gato inquieto, nada tranquilo. "
+
+       },
+       {
+            "imagen": "./img/g2.jpg",
+            "nombre": "American Bobtail",
+            "descripcion": "Confiado y amistoso, el American Bobtail es una raza altamente inteligente con una personalidad payasesca. Se parece mucho a un gato montés, a esta raza rara y atlética se le puede enseñar a caminar con una correa.",
+            "costo": 200,
+            "reseña": "Gato amistoso, me gusta mucho"
+
+       },
+       {
+            "imagen": "./img/g3.jpg",
+            "nombre": "American Curl",
+            "descripcion": "El American Curl tiene orejas rizadas distintivas que forman un arco elegante, dando una expresión alerta y alegre. Esta raza se conoce como el 'Peter Pan' de los gatos debido a la retención de su personalidad de gatito a lo largo de la vida.",
+            "costo": 100,
+            "reseña": "Buen gato para la famila, bonito"
+       },
+        {
+            "imagen": "./img/g4.jpg",
+            "nombre": "American Shorthair",
+            "descripcion": "Los antepasados ​​del American Shorthair cazaron ratas en los barcos de los primeros colonos europeos. Estos gatos florecieron junto a los pioneros, convirtiéndose eventualmente en el gato norteamericano nativo.",
+            "costo": 900,
+            "reseña": "Buen gato "
+
+        },
+        {
+            "imagen": "./img/g5.jpg",
+            "nombre": "American Wirehair",
+            "descripcion": "Se distingue de otras razas por su pelaje grueso y denso que da una sensación de lana de acero, el American Wirehair se considera un tesoro nacional.",
+            "costo": 400,
+            "reseña": "Buen gato"
+
+        },
+        {
+            "imagen": "./img/g6.jpg",
+            "nombre": "Balinese-Javanese",
+            "descripcion": "Con naturaleza de siamés, excepto por su larga y sedosa capa de armiño, el Balinese, también conocido como el Javanese, tiene un pelaje muy lujoso en la cola. ",
+            "costo": 300,
+            "reseña": "Hermoso gato"
+ 
+        },
+        {
+             "imagen": "./img/g7.jpg",
+             "nombre": "Bengal",
+             "descripcion": "La belleza real y el encanto seductor de Bengal hacen de este felino una de las razas más populares.",
+             "costo": 600,
+             "reseña": "Gato domestico"
+ 
+        },
+        {
+            "imagen": "./img/g8.jpg",
+            "nombre": "Birman",
+            "descripcion": "Con su maravillosa personalidad social, al Birman no le gusta ser el único animal en la casa.",
+            "costo": 900,
+            "reseña": "Buen gato "
+ 
+        },
+        {
+             "imagen": "./img/g9.jpg",
+             "nombre": "Bombay",
+             "descripcion": "Una raza orientada a las personas, el Bombay recibe con entusiasmo a los visitantes.",
+             "costo": 1000,
+             "reseña": "Gato negro hermoso"
+ 
+        },
+        {
+            "imagen": "./img/g10.jpg",
+            "nombre": "British Shorthair",
+            "descripcion": "El British Shorthair es cariñoso sin ser pegajoso y disfruta acurrucarse al lado del dueño, en lugar de ser un gato faldero. El British es un felino sano y resistente que madura lentamente en tres a cinco años.",
+            "costo": 300,
+            "reseña": "Gato mu cariñoso"
+ 
+        },
+        {
+             "imagen": "./img/g11.jpg",
+             "nombre": "Burmese",
+             "descripcion": "Una raza extremadamente orientada a la gente, el Burmese es juguetón y travieso incluso en la adultez. Desean un contacto cercano, le encanta acurrucarse.",
+             "costo": 250,
+             "reseña": "Gato bonito y travieso"
+ 
+        },
+        {
+            "imagen": "./img/g1.jpg",
+            "nombre": "Burmese",
+             "descripcion": "Una raza extremadamente orientada a la gente, el Burmese es juguetón y travieso incluso en la adultez. Desean un contacto cercano, le encanta acurrucarse.",
+             "costo": 800,
+             "reseña": "Gato bonito y travieso"
+ 
+        },
+        {
+             "imagen": "./img/g2.jpg",
+             "nombre": "British Shorthair",
+             "descripcion": "El British Shorthair es cariñoso sin ser pegajoso y disfruta acurrucarse al lado del dueño, en lugar de ser un gato faldero. El British es un felino sano y resistente que madura lentamente en tres a cinco años.",
+             "costo": 900,
+             "reseña": "Gato mu cariñoso"
+ 
+        },
+        {
+            "imagen": "./img/g3.jpg",
+            "nombre": "Bombay",
+            "descripcion": "Una raza orientada a las personas, el Bombay recibe con entusiasmo a los visitantes.",
+            "costo": 700,
+            "reseña": "Gato negro hermoso"
+ 
+        },
+        {
+             "imagen": "./img/g4.jpg",
+             "nombre": "Balinese-Javanese",
+             "descripcion": "Con naturaleza de siamés, excepto por su larga y sedosa capa de armiño, el Balinese, también conocido como el Javanese, tiene un pelaje muy lujoso en la cola. ",
+             "costo": 750,
+             "reseña": "Hermoso gato"
+ 
+        },
+        {
+            "imagen": "./img/g5.jpg",
+            "nombre": "Bombay",
+            "descripcion": "Una raza orientada a las personas, el Bombay recibe con entusiasmo a los visitantes.",
+            "costo": 600,
+            "reseña": "Gato negro hermoso"
+ 
+        },
+        {
+             "imagen": "./img/g6.jpg",
+             "nombre": "Balinese-Javanese",
+            "descripcion": "Con naturaleza de siamés, excepto por su larga y sedosa capa de armiño, el Balinese, también conocido como el Javanese, tiene un pelaje muy lujoso en la cola. ",
+            "costo": 200,
+            "reseña": "Hermoso gato"
+ 
+        },
+        {
+            "imagen": "./img/g7.jpg",
+            "nombre": "American Curl",
+            "descripcion": "El American Curl tiene orejas rizadas distintivas que forman un arco elegante, dando una expresión alerta y alegre. Esta raza se conoce como el 'Peter Pan' de los gatos debido a la retención de su personalidad de gatito a lo largo de la vida.",
+            "costo": 150,
+            "reseña": "Buen gato para la famila, bonito"
+ 
+        },
+        {
+             "imagen": "./img/g8.jpg",
+             "nombre": "Balinese-Javanese",
+            "descripcion": "Con naturaleza de siamés, excepto por su larga y sedosa capa de armiño, el Balinese, también conocido como el Javanese, tiene un pelaje muy lujoso en la cola. ",
+            "costo": 130,
+            "reseña": "Hermoso gato"
+ 
+        },
+        {
+            "imagen": "./img/g9.jpg",
+            "nombre": "American Shorthair",
+            "descripcion": "Los antepasados ​​del American Shorthair cazaron ratas en los barcos de los primeros colonos europeos. Estos gatos florecieron junto a los pioneros, convirtiéndose eventualmente en el gato norteamericano nativo.",
+            "costo": 170,
+            "reseña": "Buen gato "
+ 
+        },
+        {
+             "imagen": "./img/g10.jpg",
+             "nombre": "American Shorthair",
+            "descripcion": "Los antepasados ​​del American Shorthair cazaron ratas en los barcos de los primeros colonos europeos. Estos gatos florecieron junto a los pioneros, convirtiéndose eventualmente en el gato norteamericano nativo.",
+            "costo": 190,
+            "reseña": "Buen gato "
+ 
+        },
+        {
+            "imagen": "./img/g11.jpg",
+            "nombre": "American Shorthair",
+            "descripcion": "Los antepasados ​​del American Shorthair cazaron ratas en los barcos de los primeros colonos europeos. Estos gatos florecieron junto a los pioneros, convirtiéndose eventualmente en el gato norteamericano nativo.",
+            "costo": 670,
+            "reseña": "Buen gato "
+ 
+        },
+        {
+             "imagen": "./img/g1.jpg",
+             "nombre": "Bengal",
+             "descripcion": "La belleza real y el encanto seductor de Bengal hacen de este felino una de las razas más populares.",
+             "costo": 650,
+             "reseña": "Gato domestico"
+ 
+        },
+        {
+            "imagen": "./img/g2.jpg",
+            "nombre": "Birman",
+            "descripcion": "Con su maravillosa personalidad social, al Birman no le gusta ser el único animal en la casa.",
+            "costo": 550,
+            "reseña": "Buen gato "
+ 
+        },
+        {
+             "imagen": "./img/g3.jpg",
+             "nombre": "Bengal",
+             "descripcion": "La belleza real y el encanto seductor de Bengal hacen de este felino una de las razas más populares.",
+             "costo": 300,
+             "reseña": "Gato domestico"
+ 
+        },
+        {
+            "imagen": "./img/g4.jpg",
+            "nombre": "Burmese",
+             "descripcion": "Una raza extremadamente orientada a la gente, el Burmese es juguetón y travieso incluso en la adultez. Desean un contacto cercano, le encanta acurrucarse.",
+             "costo": 500,
+             "reseña": "Gato bonito y travieso"
+ 
+        },
+        {
+             "imagen": "./img/g5.jpg",
+             "nombre": "Burmese",
+             "descripcion": "Una raza extremadamente orientada a la gente, el Burmese es juguetón y travieso incluso en la adultez. Desean un contacto cercano, le encanta acurrucarse.",
+             "costo": 600,
+             "reseña": "Gato bonito y travieso"
+ 
+        },
+        {
+            "imagen": "./img/g6.jpg",
+            "nombre": "Burmese",
+            "descripcion": "Una raza extremadamente orientada a la gente, el Burmese es juguetón y travieso incluso en la adultez. Desean un contacto cercano, le encanta acurrucarse.",
+            "costo": 700,
+            "reseña": "Gato bonito y travieso"
+ 
+        },
+        {
+             "imagen": "./img/g7.jpg",
+             "nombre": "American Curl",
+            "descripcion": "El American Curl tiene orejas rizadas distintivas que forman un arco elegante, dando una expresión alerta y alegre. Esta raza se conoce como el 'Peter Pan' de los gatos debido a la retención de su personalidad de gatito a lo largo de la vida.",
+            "costo": 700,
+            "reseña": "Buen gato para la famila, bonito"
+ 
+        },
+        {
+            "imagen": "./img/g8.jpg",
+            "nombre": "Burmese",
+             "descripcion": "Una raza extremadamente orientada a la gente, el Burmese es juguetón y travieso incluso en la adultez. Desean un contacto cercano, le encanta acurrucarse.",
+             "costo": 600,
+             "reseña": "Gato bonito y travieso"
+ 
+        },
+        {
+             "imagen": "./img/g9.jpg",
+             "nombre": "American Curl",
+             "descripcion": "El American Curl tiene orejas rizadas distintivas que forman un arco elegante, dando una expresión alerta y alegre. Esta raza se conoce como el 'Peter Pan' de los gatos debido a la retención de su personalidad de gatito a lo largo de la vida.",
+             "costo": 300,
+             "reseña": "Buen gato para la famila, bonito"
+ 
+        },
+        {
+            "imagen": "./img/g10.jpg",
+            "nombre": "Birman",
+            "descripcion": "Con su maravillosa personalidad social, al Birman no le gusta ser el único animal en la casa.",
+            "costo": 200,
+            "reseña": "Buen gato "
+        },
+        {
+             "imagen": "./img/g11.jpg",
+             "nombre": "Bengal",
+             "descripcion": "La belleza real y el encanto seductor de Bengal hacen de este felino una de las razas más populares.",
+             "costo": 500,
+             "reseña": "Gato domestico"
+ 
+        },
+        {
+            "imagen": "./img/g1.jpg",
+            "nombre": "Bengal",
+            "descripcion": "La belleza real y el encanto seductor de Bengal hacen de este felino una de las razas más populares.",
+            "costo": 160,
+            "reseña": "Gato domestico"
+ 
+        },
+        {
+             "imagen": "./img/g2.jpg",
+             "nombre": "Ragdoll",
+             "descripcion": "El Ragdoll es una de las razas de gato longhair más populares. Social y amoroso, este gato disfruta de la gente y se lleva bien con los niños y los perros",
+             "costo": 300,
+             "reseña": "Buen gato "
+ 
+        },
+        {
+            "imagen": "./img/g3.jpg",
+            "nombre": "Bengal",
+            "descripcion": "La belleza real y el encanto seductor de Bengal hacen de este felino una de las razas más populares.",
+            "costo": 300,
+            "reseña": "Gato domestico"
+ 
+        },
+        {
+             "imagen": "./img/g4.jpg",
+             "nombre": "American Curl",
+             "descripcion": "El American Curl tiene orejas rizadas distintivas que forman un arco elegante, dando una expresión alerta y alegre. Esta raza se conoce como el 'Peter Pan' de los gatos debido a la retención de su personalidad de gatito a lo largo de la vida.",
+             "costo": 200,
+             "reseña": "Buen gato para la famila, bonito"
+ 
+        },
+        {
+            "imagen": "./img/g5.jpg",
+            "nombre": "Ragamuffin",
+            "descripcion": "Una raza magnífica, grande, con los ojos grandes, expresivos, el RagaMuffin es dulce y cariñoso, descrito a menudo como un oso de peluche..",
+            "costo": 200,
+            "reseña": "Buen gato "
+ 
+        },
+        {
+             "imagen": "./img/g6.jpg",
+             "nombre": "Birman",
+             "descripcion": "Con su maravillosa personalidad social, al Birman no le gusta ser el único animal en la casa.",
+             "costo": 500,
+             "reseña": "Buen gato "
+ 
+        },
+        {
+            "imagen": "./img/g7.jpg",
+            "nombre": "Pixiebob",
+            "descripcion": "Un gato musculoso que se asemeja al Wild Coastal Red Bobcat que se encuentra en el noroeste del Pacífico, el Pixiebob tiene la personalidad amorosa de un gato doméstico.",
+            "costo": 450,
+            "reseña": "Gato domestico"
+ 
+        },
+        {
+             "imagen": "./img/g8.jpg",
+             "nombre": "Peterbald",
+             "descripcion": "El elegante Peterbald desnudo es una raza atlética que parece que está realizando ballet aéreo cuando juega..",
+             "costo": 600,
+             "reseña": "Gato domestico"
+ 
+        },
+        {
+            "imagen": "./img/g9.jpg",
+            "nombre": "Norwegian Forest Cat",
+            "descripcion": "El Norwegian Forest Cat es magnífico, tiene ojos verde esmeralda brillantes, una pelaje que fluye largo, sedoso, una melena completa, y cola magnífica de 12 pulgadas.",
+            "costo": 770,
+            "reseña": "Buen gato "
+ 
+        },
+        {
+             "imagen": "./img/g10.jpg",
+             "nombre": "Ocicat",
+             "descripcion": "El Ocicat es la única raza manchada domesticada selectivamente para emular gatos de la naturaleza. .",
+             "costo": 600,
+             "reseña": "Gato domestico"
+ 
+        },
+        {
+            "imagen": "./img/g11.jpg",
+            "nombre": "Oriental",
+             "descripcion": "El Oriental es un gato elegante, con grandes orejas y ojos en forma de almendra. Una raza juguetona, animada.",
+             "costo": 400,
+             "reseña": "Gato domestico"
+ 
+        },
+        {
+             "imagen": "./img/g1.jpg",
+             "nombre": "Persian",
+            "descripcion": "Una raza de pelo largo magnífico, se parece a un peluche pero debajo del pelaje tiene un cuerpo muscular y robusto.",
+            "costo": 600,
+            "reseña": "Buen gato "
+ 
+        },
+        {
+            "imagen": "./img/g2.jpg",
+            "nombre": "Manx",
+            "descripcion": "Al Manx, corto y redondeado, se lo conoce como el coche de picadas del mundo felino debido a su aceleración y vueltas rápidas.",
+            "costo": 400,
+            "reseña": "Gato domestico"
+ 
+        },
+        {
+             "imagen": "./img/g3.jpg",
+             "nombre": "Maine Coon",
+             "descripcion": "Reconocido por tener una cola espesa, el abrigo lanudo y las orejas peludas, el Maine Coon es una raza resistente capaz de soportar climas ásperos.",
+             "costo": 100,
+             "reseña": "Buen gato "
+ 
+        },
+        {
+            "imagen": "./img/g4.jpg",
+            "nombre": "LaPerm",
+            "descripcion": "Distinguido por su manto rizado y la personalidad orientada a la gente, el LaPerm es tranquilo y amigable, pero en otras ocasiones enérgico e inquisitivo. .",
+            "costo":200,
+            "reseña": "Buen gato para la famila, bonito"
+ 
+        },
+        {
+             "imagen": "./img/g5.jpg",
+             "nombre": "Korat",
+            "descripcion": "Una rara raza tailandesa, el Korat es un compañero constante y afectuoso, es suave y bueno con los niños",
+            "costo": 500,
+            "reseña": "Buen gato para la famila, bonito"
+ 
+        },
+        {
+            "imagen": "./img/g6.jpg",
+            "nombre": "Chartreux",
+             "descripcion": "A menudo llamado el gato sonriente de Francia, el Chartreux tiene una expresión dulce y sonriente.",
+             "costo": 700,
+             "reseña": "Gato domestico"
+ 
+        }
+   ]
+}
