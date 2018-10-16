@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventouus</title>
+    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css'>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="source/css/cards.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>       
+    <script type="text/javascript" src="functions.js"></script>
+</head>
+<body>
+    <!-- START NAV -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="../">
+                        <img src="source/img/logo.png" alt="Logo">
+                    </a>
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                        <span></span>
+                <span></span>
+                <span></span>
+                </span>
+            </div>
+        
+        </div>
+    </nav>
+    <!-- END NAV -->
+
+<div class="container">
+<div id="flow">
+    <span class="flow-1"></span>
+    <span class="flow-2"></span>
+    <span class="flow-3"></span>
+</div>
+<div class="section">
+    <div class="control">
+        <h1 class="title is-1"> Eventos</h1>
+    </div>
+</div>
+<div class="section">
+    <div class="box">
+        <div class="control">
+            <h2 class="title is-6">Agregar Evento</h2>
+        </div>
+    </div>
+
+    <form id="frmPerson" class="container">
+            <div class="field">
+                <label class="label" >url Imagen</label>
+                <div class="control">
+                    <input class="input" id="txtImagen"  type="text" placeholder="Url de la imagen">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Nombre evento</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" id="txtName" type="text" placeholder="Nombre del evento">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="field">
+                <label class="label">Descripcion</label>
+                <div class="control">
+                <textarea class="textarea" id="txtDescripcion" placeholder="Descripcion del evento"></textarea>
+                </div>
+            </div>
+    
+            <div class="field">
+                <label class="label">Actividades</label>
+                <div class="control">
+                    <textarea class="textarea" id="txtActividades" placeholder="Actividades"></textarea>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" >Numero Asistentes</label>
+                <div class="control">
+                    <input class="input" id="txtNumAsistentes"  type="text" placeholder="Numero asistentes">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Asistentes</label>
+                <div class="control">
+                    <textarea class="textarea" id="txtAsistentes" placeholder="Asistentes"></textarea>
+                </div>
+            </div>
+
+            
+            <div class="field">
+                <label class="label" >Direccion</label>
+                <div class="control">
+                    <input class="input" id="txtDireccion"  type="text" placeholder="Direccion">
+                </div>
+            </div>
+            
+            <div class="field is-grouped">
+                <div class="control">
+                <input type="submit" value="Agregar" class="button is-link mg" id="btnSave" >
+                </div>
+            </div>
+         </form>
+     <br>
+
+
+<!-- Developers -->
+<div class="row columns" id="listEventos">
+
+</div>
+ <!-- Developers end -->
+</div>
+</div>
+
+
+
+<!-- FOOTER-->
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <div class="soc">
+                <a href="#"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+            </div>
+            <p>
+                <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. 
+                The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. <br>
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <script src="source/js/bulma.js"></script>
+
+</body>
+</html>
