@@ -1,0 +1,201 @@
+{
+    "events": [{
+            "id": "1",
+            "name": "Noches de trova",
+            "address": "Degollado #93 Centro, 28000 Colima City",
+            "city": "Colima",
+            "date": "Oct 10",
+            "datetime": "07:00 PM",
+            "price": "0",
+            "description": "Noches para escuchar, sentir y pasarla bien.",
+            "image": "img/banner1.jpg",
+            "publisher": "Noches café",
+            "assistants": [{
+                    "id": "1",
+                    "name": "Alfredo Tomas Perez Prado",
+                    "address": "Las brisas #356 Col. Colinas del rey",
+                    "age": "29"
+                },
+                {
+                    "id": "2",
+                    "name": "Gonzalo Hesta Vergara Álvarez",
+                    "address": "Albañiles #784 Col. El porvenir",
+                    "age": "33"
+                },
+                {
+                    "id": "3",
+                    "name": "Rosa Guadalupe Herrera Ramírez",
+                    "address": "Insurgentes #894 Col. Infonavit",
+                    "age": "25"
+                },
+                {
+                    "id": "4",
+                    "name": "Alma Daniela Benitez Peña",
+                    "address": "Guillermo Prieto #234 Col. Infonavit",
+                    "age": "22"
+                },
+                {
+                    "id": "5",
+                    "name": "Luis Fernando Silva Gomez",
+                    "address": "Pablo Neruda #764 Col. Loma bonita",
+                    "age": "20"
+                }
+            ],
+            "activities": [{
+                    "id": "1",
+                    "name": "Registro",
+                    "place": "Explanada del edificio 1",
+                    "time": "07:30 PM"
+                },
+                {
+                    "id": "2",
+                    "name": "Bebidas",
+                    "place": "Explanada del edificio 1",
+                    "time": "08:30 PM"
+                },
+                {
+                    "id": "3",
+                    "name": "Concierto",
+                    "place": "Auditorio 1",
+                    "time": "11:00 PM"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "From Silicon Valley to Mexico: YouTube at Wizeline 2018 - CDMX",
+            "address": "Av. Álvaro Obregón 190, 06700 Mexico City, Mexico",
+            "city": "CDMX",
+            "date": "Oct 11",
+            "datetime": "06:30 PM",
+            "price": "50",
+            "description": "YouTube and Wizeline Academy present an evening for local technical talent to discuss the emerging “Silicon Valley” of Mexico. Attendees will learn about the unique experiences and challenges YouTube engineers face, the impact their work has on YouTube’s mission to better serve billions of YouTube users, as well as offer access to YouTube’s Staffing team to establish potential future relationships and gain more insights into the open engineering roles at YouTube and Google.",
+            "image": "img/banner1.jpg",
+            "publisher": "Wizeline",
+            "assistants": [{
+                    "id": "1",
+                    "name": "Alfredo Tomas Perez Prado",
+                    "address": "Las brisas #356 Col. Colinas del rey",
+                    "age": "29"
+                },
+                {
+                    "id": "2",
+                    "name": "Gonzalo Hesta Vergara Álvarez",
+                    "address": "Albañiles #784 Col. El porvenir",
+                    "age": "33"
+                },
+                {
+                    "id": "3",
+                    "name": "Rosa Guadalupe Herrera Ramírez",
+                    "address": "Insurgentes #894 Col. Infonavit",
+                    "age": "25"
+                },
+                {
+                    "id": "4",
+                    "name": "Alma Daniela Benitez Peña",
+                    "address": "Guillermo Prieto #234 Col. Infonavit",
+                    "age": "22"
+                },
+                {
+                    "id": "5",
+                    "name": "Luis Fernando Silva Gomez",
+                    "address": "Pablo Neruda #764 Col. Loma bonita",
+                    "age": "20"
+                }
+            ],
+            "activities": [{
+                    "id": "1",
+                    "name": "Registro",
+                    "place": "Explanada del edificio 1",
+                    "time": "07:30 PM"
+                },
+                {
+                    "id": "2",
+                    "name": "Bebidas",
+                    "place": "Explanada del edificio 1",
+                    "time": "08:30 PM"
+                },
+                {
+                    "id": "3",
+                    "name": "Conferencias",
+                    "place": "Auditorio 1",
+                    "time": "10:00 PM"
+                },
+                {
+                    "id": "4",
+                    "name": "Cena",
+                    "place": "Explanada del edificio 1",
+                    "time": "11:00 PM"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "name": "Training: Health Data Science with R",
+            "address": "SUM México Campus Bajío",
+            "city": "Colima",
+            "date": "Oct 10",
+            "datetime": "8:45 PM",
+            "price": "100",
+            "description": "Women.inData capítulo Guanajuato, te invita a nuestro próximo training: Health Data Science with R. Aprenderás a aplicar las herramientas conceptuales de Data Science a problemas e interpretar razonablemente los resultados obtenidos, asì mismo generarás procesos de extracción, utilización de modelos matemáticos, algoritmos para convertir datos en conocimiento y a generar información valiosa para tu organización. Además, explorarás y descubrirás datos con ML(Machine Learning).",
+            "image": "img/banner1.jpg",
+            "publisher": " SUM",
+            "assistants": [{
+                    "id": "1",
+                    "name": "Alfredo Tomas Perez Prado",
+                    "address": "Las brisas #356 Col. Colinas del rey",
+                    "age": "29"
+                },
+                {
+                    "id": "2",
+                    "name": "Gonzalo Hesta Vergara Álvarez",
+                    "address": "Albañiles #784 Col. El porvenir",
+                    "age": "33"
+                },
+                {
+                    "id": "3",
+                    "name": "Rosa Guadalupe Herrera Ramírez",
+                    "address": "Insurgentes #894 Col. Infonavit",
+                    "age": "25"
+                },
+                {
+                    "id": "4",
+                    "name": "Alma Daniela Benitez Peña",
+                    "address": "Guillermo Prieto #234 Col. Infonavit",
+                    "age": "22"
+                },
+                {
+                    "id": "5",
+                    "name": "Luis Fernando Silva Gomez",
+                    "address": "Pablo Neruda #764 Col. Loma bonita",
+                    "age": "20"
+                }
+            ],
+            "activities": [{
+                    "id": "1",
+                    "name": "Registro",
+                    "place": "Explanada del edificio 1",
+                    "time": "09:15 PM"
+                },
+                {
+                    "id": "2",
+                    "name": "Bebidas",
+                    "place": "Explanada del edificio 1",
+                    "time": "09:30 PM"
+                },
+                {
+                    "id": "3",
+                    "name": "Conferencias",
+                    "place": "Auditorio 1",
+                    "time": "10:30 PM"
+                },
+                {
+                    "id": "4",
+                    "name": "Taller",
+                    "place": "Explanada del edificio 1",
+                    "time": "1:30 PM"
+                }
+            ]
+        }
+    ]
+}

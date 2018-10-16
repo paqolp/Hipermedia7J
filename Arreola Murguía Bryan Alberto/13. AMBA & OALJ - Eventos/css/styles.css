@@ -1,0 +1,111 @@
+/* Fadein page animation content goes here */
+
+html {
+    animation: fadein 1s;
+    /* Firefox */
+    -moz-animation: fadein 1s;
+    /* Safari and Chrome */
+    -webkit-animation: fadein 1s;
+    /* Opera */
+    -o-animation: fadein 1s;
+}
+
+/* Using CSS3 animation */
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Firefox */
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari and Chrome */
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Opera */
+
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* End of fadein page animation */
+
+/* Custom CSS */
+.nav-wrapper {
+    margin: 1em 15em;
+}
+
+nav {
+    background-color: #fafafa;
+    height: 6em;
+}
+
+.navbar-fixed {
+    margin-bottom: 2em;
+}
+
+ul>li>a {
+    color: #333;
+}
+
+.card {
+    min-height: 300px;
+    max-height: 450px;
+}
+
+.card-container {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 1rem;
+}
+
+.container {
+    margin-bottom: 70px;
+}
+
+.container {
+    margin-top: 5em;
+}
+
+.carousel {
+    max-height: 800px;
+}
+
+.sidenav-trigger {
+    color: #333;
+}
+
+.event-img {
+    max-height: 350px;
+}

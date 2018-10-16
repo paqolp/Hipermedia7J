@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos VIP - Registrar eventos en línea</title>
+
+    <!-- CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Eventos VIP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="event.html?type=new&id=-1">Nuevo evento</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navigation -->
+
+    <!-- Container -->
+    <div class="container mt-4 mb-4">
+
+      <div class="row text-center mb-3">
+        <div class="col-12">
+          <h1 id="title">Registrar nuevo evento</h1>
+        </div>
+      </div>
+
+      <div id="alert"></div>
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs">
+          <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#tab1">Información general</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#tab2">Actividades</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#tab3">Asistentes</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tab4">Galería de imagenes</a>
+          </li>
+      </ul>
+            
+      <!-- Tab Panes -->
+      <div class="tab-content">
+
+        <div id="tab1" class="container tab-pane active mt-3">
+          <form name="general_info" onsubmit="return false">
+            <div class="form-group">
+              <label>Nombre del evento:</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-4">
+                <label>Fecha:</label>
+                <input type="date" class="form-control" id="date">
+              </div>
+              <div class="form-group col-4">
+                <label>Hora:</label>
+                <input type="time" class="form-control" id="time">
+              </div>
+              <div class="form-group col-4">
+                <label>Lugar:</label>
+                <input type="text" class="form-control" id="location">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Domicilio:</label>
+              <input type="text" class="form-control" id="address">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-6">
+                <label>Nombre del anfitrión:</label>
+                <input type="text" class="form-control" id="host">
+              </div>
+              <div class="form-group col-6">
+                <label>Correo electrónico:</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Resumen:</label>
+              <textarea class="form-control" cols="10" rows="3" id="summary"></textarea>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-6">
+                <button class="btn btn-success btn-outline-success btn-block" id="btn_add_update">Registrar</button>
+              </div>
+              <div class="form-group col-6">
+                <a href="index.html" class="btn btn-danger btn-outline-danger btn-block">Cancelar</a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div id="tab2" class="container tab-pane fade"><br>
+          <form name="activities">
+            <div class="form-group">
+              <label>Nombre de la actividad:</label>
+              <input type="text" class="form-control" id="act_name">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-4">
+                <label >Fecha:</label>
+                <input type="date" class="form-control" id="act_date">
+              </div>
+              <div class="form-group col-4">
+                <label >Hora de inicio:</label>
+                <input type="time" class="form-control" id="act_time_start">
+              </div>
+              <div class="form-group col-4">
+                <label >Hora de termino:</label>
+                <input type="time" class="form-control" id="act_time_end">
+              </div>
+            </div>
+            <div class="form-group">
+              <label >Descripción:</label>
+              <textarea class="form-control" cols="10" rows="3" id="act_desc"></textarea>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-4">
+                <input type="button" value="Agregar actividad" class="btn btn-primary btn-outline-primary btn-block" onclick="addActivity()">
+              </div>
+              <div class="form-group col-4"></div>
+              <div class="form-group col-4"></div>
+            </div>
+          </form>
+
+          <div id="activities_list">
+            <div class="row mt-4">
+              <div class="col-12">
+                <h3 class="text-center">Lista de actividades</h3>
+              </div>
+            </div>
+            <hr class="mt-0">
+          </div>
+        </div>
+
+        <div id="tab3" class="container tab-pane fade"><br>
+          <form name="assistants">
+            <div class="form-row">
+              <div class="form-group col-6">
+                <label>Nombre del asistente:</label>
+                <input type="text" class="form-control" id="ass_name">
+              </div>
+              <div class="form-group col-6">
+                <label>Correo electrónico:</label>
+                <input type="email" class="form-control" id="ass_email">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-4">
+                <input type="button" value="Agregar asistente" class="btn btn-primary btn-outline-primary btn-block" onclick="addAssistant()">
+              </div>
+              <div class="form-group col-4"></div>
+              <div class="form-group col-4"></div>
+            </div>
+          </form>
+
+          <div id="assistants_list">
+            <div class="row mt-4">
+              <div class="col-12">
+                <h3 class="text-center">Lista de asistentes</h3>
+              </div>
+            </div>
+            <hr class="mt-0">
+          </div>
+        </div>
+
+        <div id="tab4" class="container tab-pane fade"><br>
+          <form name="gallery">
+            <div class="form-group">
+              <label>URL de la imágen:</label>
+              <input type="text" class="form-control" id="gall_url">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-4">
+                <input type="button" value="Agregar imagen" class="btn btn-primary btn-outline-primary btn-block" onclick="addURL()">
+              </div>
+              <div class="form-group col-4"></div>
+              <div class="form-group col-4"></div>
+            </div>
+          </form>
+
+          <div id="gallery_list">
+            <div class="row mt-4">
+              <div class="col-12">
+                <h3 class="text-center">Lista de imágenes</h3>
+              </div>
+            </div>
+            <hr class="mt-0">
+          </div>
+        </div>
+
+      </div>
+      <!-- End Tab Panes -->
+    </div>
+    <!-- End Container -->
+
+      <!-- JS Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/event.js"></script>
+
+    <!-- Load scripts for Events manipulation -->
+    <script src="js/lib/EventsManager.js"></script>
+    <script src="js/lib/ActivitiesManager.js"></script>
+    <script src="js/lib/AssistantsManager.js"></script>
+    <script src="js/lib/GalleryManager.js"></script>
+  </body>
+</html>

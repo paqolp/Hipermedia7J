@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <script>
+        function open1() { window.open('https://www.facebook.com/jorcebs'); }
+        function open2() { window.open('https://www.instagram.com/jorcebs'); }
+        function replace1() {
+            document.open('text/html', 'replace');
+            document.write("<button onclick='open2()'>Abrir Instagram</button><button onclick='replace2()'>Mas opciones</button>");
+            document.close();
+        }
+        function replace2() {
+            document.open('text/html', 'replace');
+            document.write("<button onclick='open1()'>Abrir Facebook</button><button onclick='replace1()'>Mas opciones</button>");
+            document.close();
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick='open1()'>Abrir Facebook</button>
+    <button onclick='replace1()'>Mas opciones</button>
+</body>
+
+</html>
