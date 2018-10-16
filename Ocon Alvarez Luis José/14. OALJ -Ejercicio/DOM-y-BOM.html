@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contar el número de imagenes que contiene el documento actual y cargar un nuevo documento</h1>
+
+    <img src="http://pm1.narvii.com/6477/d6093aeae0a67ff56663000b38f872afda2be3ea_00.jpg" alt="">
+    <img src="https://i.ytimg.com/vi/eTEVIpiX0xo/maxresdefault.jpg" alt="">
+    <img src="https://orig00.deviantart.net/4de0/f/2010/279/5/4/puras_weas_by_quick2004-d308go8.jpg" alt="">
+
+    <br> <input type="button" value="Cargar un nuevo documento" onclick="nuevoDoc()">
+
+    <script>
+        function nuevoDoc(){
+            window.location.assign("https://www.w3schools.com/")
+        }
+    </script>
+
+    <p id="demo"></p>
+    
+    <script>
+        document.getElementById("demo").innerHTML = "Número de imagenes: " + document.images.length;
+    </script>
+</body>
+</html>
