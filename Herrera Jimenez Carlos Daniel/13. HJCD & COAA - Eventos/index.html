@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos VIP - Registrar eventos en línea</title>
+
+    <!-- CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Eventos VIP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="event.html?type=new&id=-1">Nuevo evento</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navigation -->
+      
+    <!-- Page Content -->
+    <div class="container mt-4 mb-4">
+      
+      <div class="row text-center mb-3">
+        <div class="col-12">
+          <h1>Tus eventos</h1>
+        </div>
+      </div>
+
+      <!-- Events List -->
+      <div class="row">
+        <div class="col-12">
+          <div id="events_list" class="row">
+          </div>
+        </div>
+      </div>
+      <!-- End of Events List -->
+
+    </div>
+    <!-- End of Page Content -->
+
+    <!-- JS Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <!-- Load scripts for Events manipulation -->
+    <script src="js/lib/EventsManager.js"></script>
+    <script src="js/lib/ActivitiesManager.js"></script>
+    <script src="js/lib/AssistantsManager.js"></script>
+    <script src="js/lib/GalleryManager.js"></script>
+  </body>
+</html>
