@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <p>Hola, este es un mesaje dedicado para ti. Me gusta el aguacate.</p>
+
+    <h2>Se le advierte que no le haga clic a los botones.</h2>
+
+    <button onclick="myFunction()">Don't clic me</button>
+
+    <script>
+    function myFunction() {
+        alert("¡AHHHHHH, TE DIJE QUE NO LE DIERAS CLIC!");
+    }
+    </script>
+
+    <p id="demo">Eh men, no le vayas a dar clic a este tampoco.</p>
+
+    <button onclick="myFunction2()">Hola compa, no me de clic pls</button>
+
+    <script>
+    function myFunction2() {
+        document.open("text/html","replace");
+        document.write("<h2>¡AH NO MA WE, LO MATASTE!</h2>");
+        document.close();
+    }
+    </script>
+
+</body>
+</html>
