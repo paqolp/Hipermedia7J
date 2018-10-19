@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Ejemplo facil</title>
+  </head>
+<body>
+
+<h2>Finding HTML Elements Using document.links</h2>
+
+<p>
+<a href="/html/default.asp">HTML</a>
+<br>
+<a href="/css/default.asp">CSS</a>
+</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"Number of links: " + document.links.length;
+</script>
+
+<h1>Finding HTML Elements Using document.title</h1>
+
+<p id="demo2"></p>
+
+<script>
+document.getElementById("demo2").innerHTML =
+"The title of this document is: " + document.title;
+</script>
+
+</body>
+</html>
