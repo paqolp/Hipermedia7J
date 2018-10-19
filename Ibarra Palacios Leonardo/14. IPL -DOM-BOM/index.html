@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM y BOM</title>
+</head>
+<body>
+    <h1>Cambio de imagen</h1>
+    <button onclick="myFunction()">Click</button>
+    <p id="demo"></p>
+    
+    <script>
+        function myFunction() {
+            var txt;
+            var img1 = "<img src='img/Meme1.jpg' alt='Meme1'>";
+            var img2 = "<img src='img/Meme2.png' alt='Meme2'>";
+            if(confirm("Selecciona la imagen"))
+            {
+                document.write(img1);
+            }
+            else
+            {
+                document.write(img2)
+            }
+            document.getElementById("demo").innerHTML = "navigator.cookieEnabled is " 
+            + navigator.cookieEnabled;
+        }
+    </script>
+    <button onclick="goBack()">Go Back</button>
+</body>
+</html>
