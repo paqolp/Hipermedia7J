@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarea 14 </title>
+</head>
+<body>
+    <!--DOM-->
+    <div>
+        <h1> DOM </h1>
+        <img src="./img/cerdo.png" width="362" height="255">
+        <img src="./img/orca.png" width="362" height="255">
+        <img src="./img/perro.png" width="362" height="255">
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").innerHTML = "Numero de imagenes: " + document.images.length;
+        </script>
+    </div>
+    
+    
+<!--BOM, Menzclando BOM y DOM-->
+<h2>BOM</h2>
+    <div>
+        <script>
+            var w;
+            function openwindow() {
+                w = window.open('','', 'width=100,height=100');
+                w.focus();
+                w.document.write("<div> <img src='./img/cerdo.png' width='486' height='266'> <img src='./img/orca.png' width='362' height='255'> <img src='./img/perro.png' width='362' height='255'> <p id='demo'></p>  ");
+               w.document.write(" <button onclick='openwindow()'>Create window</button> <button onclick='resizeWindow()'>Resize window</button> <button onclick='close()'>Close</button>");
+                w.document.getElementById("demo").innerHTML = "Numero de imagenes: " + document.images.length;
+
+            }
+            
+            function resizeWindow() {
+                w.resizeTo(800, 800);
+                w.focus();
+            }
+            function closeWindow(){
+                w.close();
+            }
+            </script>
+           
+            <button onclick="openwindow()">Create window</button>
+            <button onclick="resizeWindow()">Resize window</button>
+            <button onclick="close()">Close</button>
+
+    </div>
+</body>
+</html>
