@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1 id="title">Mi pagina</h1>
+        <p id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita debitis veniam, alias illum nostrum
+            placeat quaerat dolor officiis facere sed, fugit porro quia possimus praesentium ipsam dignissimos.
+            Accusantium, vitae numquam.</p>
+
+        <div>
+            <input type="button" onclick="changeStyle()" value="Cambiar el color">
+            <input type="button" onclick="printPage()" value="Imprimir">
+        </div>
+    </div>
+    <script>
+        function changeStyle() {
+            document.getElementById('title').style.color = 'blue';
+            document.getElementById('content').style.color = 'grey';
+        }
+        function printPage() {
+            window.print();
+        }
+    </script>
+</body>
+
+</html>
