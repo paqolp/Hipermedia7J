@@ -352,8 +352,44 @@
 </div>
 
 </footer>
+<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBnsprFN66bHQ2athWBbaJKiEP0eMj-ISs",
+            authDomain: "authentication-babdb.firebaseapp.com",
+            databaseURL: "https://authentication-babdb.firebaseio.com",
+            projectId: "authentication-babdb",
+            storageBucket: "authentication-babdb.appspot.com",
+            messagingSenderId: "645987726029"
+        };
+        firebase.initializeApp(config);
+
+        // Acceso de datos
+        var TablaDeBaseDatos = firebase.database().ref('chat');
+
+        TablaDeBaseDatos.on('value',function(snapshot){
+            $(".chat").html(""); //limpia chat
+
+            snapshot.forEach(function(e){ //Lee todos los mensajes de la base
+                var objeto = e.val(); //asigna los valores
+                //validacion de datos nulos
+                if((objeto.Mensaje != null) && (objeto.Nombre != null)){
+                    //pegado de regitros
+                    $("#plantilla").clone().appendTo(".chat");
+                    $('.chat #plantilla').show(10);
+                    $('.chat #plantilla .Nombre').html(objeto.Nombre);
+                    $('.chat #plantilla .Mensaje').html(objeto.Mensaje);
+                    $('.chat #plantilla .Tiempo').html(objeto.Fecha);
+                    $('.chat #plantilla').attr("id","");
+                }
+            });
+        });
+    </script>
+    <script src="js/firebase.js"></script>
 </body>
 </html>
+
 
      
 <?php
@@ -363,3 +399,4 @@
     }
 
 ?>
+
