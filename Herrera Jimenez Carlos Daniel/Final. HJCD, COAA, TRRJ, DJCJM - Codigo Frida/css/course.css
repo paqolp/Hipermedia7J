@@ -1,0 +1,24 @@
+.locked-image {
+    opacity: 0.3 !important;
+    filter: brightness(0.8) !important;
+}
+
+@media all and (min-width: 993px) {
+
+    .margin-top-resizable-course {
+        margin-top: 2.8em !important;
+    }
+
+}
+
+@media all and (max-width: 992px) {
+
+    .margin-bot-resizable-course {
+        margin-bottom: 0.5em !important;
+    }
+
+    .margin-top-resizable-course {
+        margin-top: 0em !important;
+    }
+
+}

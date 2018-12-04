@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Código Frida</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='shortcut icon' href='img/icon.png' type='image/x-icon'>
+    <link rel='stylesheet' href='css/main.css'>
+    <link rel='stylesheet' href='css/index.css'>
+    <link rel='stylesheet' href='includes/materialize/materialize.css'>
+    <script src='includes/jquery/jquery-3.3.1.min.js'></script>
+    <script src='includes/materialize/materialize.js'></script>
+    <script src='includes/moment/moment.min.js'></script>
+    <script src='js/main.js'></script>
+    <script src='js/index.js'></script>
+</head>
+
+<body>
+
+    <main>
+        <div class='pink center-align width-100 height-15'>
+            <img class='width-6 margin-top-3' src='img/logo.png'>
+            <h5 class='white-text no-margin-top'><strong>Código Frida</strong></h5>
+        </div>
+
+        <div class='index-form white round-all-corners'>
+            <div id='login-form'>
+                <div class='center-align'>
+                    <h1 class='pink-text no-margin'>¡Bienvenido@!</h1>
+                    <h5 class='grey-text text-darken-1 margin-bot-1'>Inicia sesión para continuar</h5>
+                </div>
+                <div class='input-field'>
+                    <input type='email' id='sign-in-email'>
+                    <label for='sing-in-email'>Correo electrónico</label>
+                    <span class='helper-text yellow-text text-darken-4 hide' id='login-error-message'>Correo
+                        electrónico o contraseña incorrectos.</span>
+                </div>
+                <div class='input-field margin-bot-025'>
+                    <input class='no-margin-bot' type='password' id='sign-in-password'>
+                    <label for='sign-in-password'>Contraseña</label>
+                </div>
+                <a class='small-font modal-trigger pink-text' href='#password-reset-modal'>¿Olvidaste tu contraseña?</a>
+                <button class='btn pink width-100 margin-top-105' onclick='login()'>Ingresar</button>
+                <p class='small-font grey-text text-darken-1 margin-top-2 no-margin-bot'>¿No tienes una cuenta? <a
+                        class='cursor-pointer pink-text' onclick='showBasicRegistrationForm()'>¡Regístrate!</a></p>
+            </div>
+
+            <div class='hide-on-load' id='basic-registration-form'>
+                <div class='center-align'>
+                    <h1 class='pink-text no-margin'>Sé parte de Código Frida</h1>
+                    <h5 class='grey-text text-darken-1 margin-bot-1'>Escribe tus credenciales</h5>
+                </div>
+                <div class='input-field'>
+                    <input type='email' id='sign-up-email'>
+                    <label for='sign-up-email'>Correo electrónico</label>
+                </div>
+                <div class='input-field'>
+                    <input type='password' id='sign-up-password'>
+                    <label for='sign-up-password'>Contraseña</label>
+                </div>
+                <div class='input-field'>
+                    <input type='password' id='sign-up-password-repeat'>
+                    <label for='sign-up-password-repeat'>Repetir contraseña</label>
+                </div>
+                <p>
+                    <label>
+                        <input class='with-gap' name='user-type' type='radio' id='radio-frida' value="FRIDA" checked>
+                        <span class='black-text'>Soy una Frida</span>
+                    </label>
+                    <label class='margin-left-1'>
+                        <input class='with-gap' name='user-type' type='radio' id='radio-mentor' value="MENTOR">
+                        <span class='black-text'>Soy un(a) mentor(a)</span>
+                    </label>
+                </p>
+                <button class='btn pink width-100 margin-top-1 margin-bot-105' onclick='showUserRegistrationForm()'>Continuar</button>
+                <a class='cursor-pointer small-font pink-text' onclick='showLoginForm()'>Ya tengo una cuenta</a>
+            </div>
+
+            <div class='hide-on-load' id='frida-registration-form'>
+                <div class='center-align'>
+                    <h1 class='pink-text margin-bot-1 no-margin-top'>¡Escribe tus datos para registrarte!</h1>
+                </div>
+                <div class='input-field'>
+                    <input type='text' id='frida-name'>
+                    <label for='name'>Nombre(s)</label>
+                </div>
+                <div class='input-field'>
+                    <input type='text' id='frida-last-name'>
+                    <label for='last-name'>Apellidos</label>
+                </div>
+                <div class='input-field'>
+                    <input type='text' class='datepicker' id='frida-birthday'>
+                    <label for='frida-birthday'>Fecha de nacimiento</label>
+                </div>
+                <div class='input-field'>
+                    <input type='text' id='frida-cellphone-number'>
+                    <label for='frida-cellphone-number'>Número de celular</label>
+                </div>
+                <div class='input-field'>
+                    <input type='text' id='frida-provenance'>
+                    <label for='frida-provenance'>Escuela de procedencia</label>
+                </div>
+                <button class='btn pink width-100 margin-top-1' onclick='register()'>Registrarme</button>
+                <p class='small-font grey-text text-darken-1'>Al registrarte, aceptas los
+                    <a class='modal-trigger pink-text' href='#terms-of-use'> términos de uso </a>y
+                    <a class='modal-trigger pink-text' href='#privacy-policies'> políticas de privacidad</a>.</p>
+                <a class='cursor-pointer small-font pink-text' onclick='showBasicRegistrationForm()'>Regresar</a>
+            </div>
+
+            <!--
+                <div class='hide-on-load' id='mentor-verification-form'>
+                    <div class='center-align'>
+                        <h1 class='pink-text no-margin'>¿Eres mentor/a?</h1>
+                        <h5 class='grey-text text-darken-1 margin-bot-1'>¡Demuéstralo!</h5>
+                        <p>Pídele a tu Lider F que genere un código de activación de cuenta para mentores para poder
+                            continuar</p>
+                    </div>
+                    <div class='input-field margin-bot-025'>
+                        <input type='text' id='verification-code'>
+                        <label for='verification-code'>Código de activación</label>
+                    </div>
+                    <button class='btn pink width-100 margin-top-1 margin-bot-105' onclick=''>Continuar</button>
+                    <a class='cursor-pointer small-font pink-text' onclick=''>No soy mentor/a</a>
+                </div>
+            -->
+
+            <div class='hide-on-load' id='mentor-registration-form'>
+                <div class='center-align'>
+                    <h1 class='pink-text margin-bot-1 no-margin-top'>¡Escribe tus datos para registrarte!</h1>
+                </div>
+                <div class='input-field'>
+                    <input type='text' id='mentor-name'>
+                    <label for='name'>Nombre(s)</label>
+                </div>
+                <div class='input-field'>
+                    <input type='text' id='mentor-last-name'>
+                    <label for='last-name'>Apellidos</label>
+                </div>
+                <div class='input-field'>
+                    <select id='mentor-genre'>
+                        <option value='' disabled selected>Selecciona tu sexo...</option>
+                        <option value='MALE'>Masculino</option>
+                        <option value='FEMALE'>Femenino</option>
+                        <option value='OTHER'>Otro</option>
+                    </select>
+                    <label>Sexo</label>
+                </div>
+                <div class='input-field margin-top-105'>
+                    <input type='text' class='datepicker' id='mentor-birthday'>
+                    <label for='mentor-birthday'>Fecha de nacimiento</label>
+                </div>
+                <div class='input-field'>
+                    <input type='text' id='mentor-cellphone-number'>
+                    <label for='mentor-cellphone-number'>Número de celular</label>
+                </div>
+                <div class='input-field'>
+                    <input type='text' id='mentor-provenance'>
+                    <label for='mentor-provenance'>Institución o empresa de procedencia</label>
+                </div>
+                <div class='input-field margin-bot-025'>
+                    <select id='mentor-area'>
+                        <option class='' value='' disabled selected>Selecciona tu área...</option>
+                        <option value='FM_CT'>Físico matemático y ciencias de la tierra</option>
+                        <option value='B_Q'>Biología y química</option>
+                        <option value='M_CS'>Medicina y ciencias de la salud</option>
+                        <option value='H_CC'>Humanidades y ciencias de la conducta</option>
+                        <option value='S_EA'>Sociales y económico administrativas</option>
+                        <option value='B_CA'>Biotecnología y ciencias agropecuarias</option>
+                        <option value='ING'>Ingenierías</option>
+                    </select>
+                    <label>Área de conocimiento</label>
+                </div>
+                <button class='btn pink width-100 margin-top-1' onclick='register()'>Registrarme</button>
+                <p class='small-font grey-text text-darken-1'>Al registrarte, aceptas los
+                    <a class='modal-trigger pink-text' href='#terms-of-use'> términos de uso </a>y
+                    <a class='modal-trigger pink-text' href='#privacy-policies'> políticas de privacidad</a>.</p>
+                <a class='cursor-pointer small-font pink-text' onclick='showBasicRegistrationForm()'>Regresar</a>
+            </div>
+        </div>
+
+        <div class='modal round-all-corners' id='password-reset-modal'>
+            <div class='modal-content no-padding-bot'>
+                <h4>Cambio de contraseña</h4>
+                <p>Hemos mandado instrucciones para cambiar tu contraseña al correo «correo@del.usuario». Por favor
+                    revisa tus bandejas de entrada y spam.</p>
+            </div>
+            <div class='modal-footer'>
+                <a class='cursor-pointer modal-close waves-effect waves-green btn-flat'>Cerrar</a>
+            </div>
+        </div>
+        <div class='modal round-all-corners' id='terms-of-use'>
+            <div class='modal-content no-padding-bot'>
+                <h4>Términos de uso</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt illo illum ab libero explicabo
+                    quo ipsa in quis dicta blanditiis. Ipsam, ea dolorem quo aperiam officiis minus repudiandae. Neque,
+                    fuga.</p>
+            </div>
+            <div class='modal-footer'>
+                <a class='cursor-pointer modal-close waves-effect waves-green btn-flat'>Cerrar</a>
+            </div>
+        </div>
+        <div class='modal round-all-corners' id='privacy-policies'>
+            <div class='modal-content no-padding-bot'>
+                <h4>Políticas de privacidad</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt illo illum ab libero explicabo
+                    quo ipsa in quis dicta blanditiis. Ipsam, ea dolorem quo aperiam officiis minus repudiandae. Neque,
+                    fuga.</p>
+            </div>
+            <div class='modal-footer'>
+                <a class='cursor-pointer modal-close waves-effect waves-green btn-flat'>Cerrar</a>
+            </div>
+        </div>
+        <div class='modal round-all-corners' id='registration-confirmation'>
+            <div class='modal-content no-padding-bot'>
+                <h4>¡Registro exitoso!</h4>
+                <p>Te has registrado exitosamente. Por favor inicia sesión para continuar.</p>
+            </div>
+            <div class='modal-footer'>
+                <a href='index.html' class='cursor-pointer modal-close waves-effect waves-green btn-flat'>Iniciar
+                    sesión</a>
+            </div>
+        </div>
+        <div class='modal round-all-corners' id='registration-failed'>
+            <div class='modal-content no-padding-bot'>
+                <h4>¡Ups, lo sentimos!</h4>
+                <p>Al parecer ha ocurrido un error mientras intentabamos registrar tu usuario, inténtalo de nuevo más
+                    tarde.</p>
+            </div>
+            <div class='modal-footer'>
+                <a href='index.html' class='cursor-pointer modal-close waves-effect waves-green btn-flat'>Regresar a
+                    inicio de sesión</a>
+            </div>
+        </div>
+        <div class='modal round-all-corners' id='mentor-login-error'>
+            <div class='modal-content no-padding-bot'>
+                <h4>En desarrollo</h4>
+                <p>El acceso de mentores a la plataforma ha sido suspendido por el momento.</p>
+            </div>
+            <div class='modal-footer'>
+                <a class='cursor-pointer modal-close waves-effect waves-green btn-flat'>Cerrar</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class='page-footer grey darken-3'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col s12 l6'>
+                    <ul class='collapsible grey-text text-lighten-2'>
+                        <li>
+                            <div class='collapsible-header grey darken-3'><i class='material-icons'>info_outline</i>Código
+                                Frida</div>
+                            <div class='collapsible-body'><span>Código Frida es un programa para la inclusión de
+                                    mujeres jóvenes en las STEM a través del diseño de aplicaciones móviles que
+                                    resuelven un problema social.</span></div>
+                        </li>
+                        <li>
+                            <div class='collapsible-header grey darken-3'><i class='material-icons'>directions_run</i>Cómo
+                                comenzar</div>
+                            <div class='collapsible-body'><span>Acércate a un(a) mentor(a) y pídele que te asigne
+                                    a un equipo de trabajo. Puedes ver los perfiles de los mentores haciendo clic
+                                    <a class='pink-text text-lighten-3' href='mentors.html'><strong>aquí</strong></a>.
+                                    Cuando encuentres a un(a) mentor(a) de tu agrado, contáctalo(a) por correo
+                                    electrónico.</span></div>
+                        </li>
+                        <li>
+                            <div class='collapsible-header grey darken-3'><i class='material-icons'>low_priority</i>Qué
+                                puedo hacer</div>
+                            <div class='collapsible-body'><span>
+                                    Trabaja con tu equipo y completa las actividades del
+                                    <a class='pink-text text-lighten-3' href='course.html'><strong>curso</strong></a>.
+                                    Recibe insignias en base a tu desempeño realizado en cada actividad. ¡Colecciona
+                                    suficientes insignias y recibe premios en la vida real!</span></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class='col s12 l4 offset-l2'>
+                    <h4 class='grey-text text-lighten-2 margin-bot-1'>Patrocinadores</h4>
+                    <a class='sponsor' href='http://cognosac.org/' target='_blank'><img src='img/sponsor-cognos.png'></a>
+                    <a class='sponsor' href='https://ludolab.org/' target='_blank'><img src='img/sponsor-ludolab.png'></a>
+                    <a class='sponsor' href='https://inist.mx/' target='_blank'><img src='img/sponsor-inist.png'></a>
+                </div>
+
+            </div>
+        </div>
+        <div class='footer-copyright grey darken-4'>
+            <div class='container'>
+                &copy; 2018 Código Frida
+                <div class='right'>
+                    <a href='' target='_blank'><img class='social-media' src='img/social-facebook.png'></a>
+                    <a class='margin-left-03' href='' target='_blank'><img class='social-media' src='img/social-twitter.png'></a>
+                    <a class='margin-left-03' href='' target='_blank'><img class='social-media' src='img/social-github.png'></a>
+                    <a class='margin-left-03' href='mailto:franciscoivan_lepe@ucol.mx?Subject=Código%20Frida' target='_top'><img
+                            class='social-media' src='img/social-mail.png'></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

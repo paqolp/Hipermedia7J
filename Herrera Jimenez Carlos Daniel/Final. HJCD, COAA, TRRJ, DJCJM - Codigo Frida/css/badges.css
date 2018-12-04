@@ -1,0 +1,38 @@
+.big-badge {
+    max-width: 9em !important;
+    margin: 0.5em 0.2em !important;
+    transition: all 0.14s ease-in !important;
+}
+
+.big-badge:hover {
+    cursor: pointer;
+    filter: drop-shadow(12px 12px 5px rgba(100, 92, 92, 0.5)) !important;
+    transition: all 0.15s ease-in !important;
+}
+
+.huge-badge {
+    max-width: 16em !important;
+    margin-top: 1.5em !important;
+    animation: rotate-animation 3.5s infinite linear;
+    -webkit-animation: rotate-animation 3.5s infinite linear;
+}
+
+@-webkit-keyframes rotate-animation {
+    from {
+        -webkit-transform: rotateY(0deg);
+    }
+
+    to {
+        -webkit-transform: rotateY(360deg);
+    }
+}
+
+@keyframes rotate-animation {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}

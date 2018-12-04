@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Curso</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='shortcut icon' href='img/icon.png' type='image/x-icon'>
+    <link rel='stylesheet' href='css/main.css'>
+    <link rel='stylesheet' href='css/course.css'>
+    <link rel='stylesheet' href='includes/materialize/materialize.css'>
+    <script src='includes/jquery/jquery-3.3.1.min.js'></script>
+    <script src='includes/materialize/materialize.js'></script>
+    <script src='includes/moment/moment.min.js'></script>
+    <script src='js/main.js'></script>
+    <script src='js/course.js'></script>
+</head>
+
+<body>
+
+    <nav class='pink darken-1'>
+        <div class='nav-wrapper container'>
+            <a class='brand-logo' href='course.html'><img src='img/logo.png'></a>
+            <a class='sidenav-trigger' data-target='sidenav'><i class='white-text material-icons'>menu</i></a>
+            <ul class='right hide-on-med-and-down'>
+                <li class='active'><a class='white-text' href='course.html'>Curso</a></li>
+                <li><a class='white-text' href='badges.html'>Mis insignias</a></li>
+                <li><a class='white-text' href='team.html'>Mi equipo</a></li>
+                <li><a class='white-text' href='mentors.html'>Mentores</a></li>
+                <li><a class='white-text' href='fridas.html'>Fridas</a></li>
+                <li><a class='white-text dropdown-trigger valign-wrapper' href='profile.html' data-target='profile-dropdown'>
+                        <div class='user-min-name'></div>
+                        <img class='circle user-nav right user-min-image' src=''>
+                    </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class='dropdown-content' id='profile-dropdown'>
+        <li class='pink darken-1'><a class='white-text' href='profile.html'>Mi perfil</a></li>
+        <li class='pink darken-1'><a class='white-text logout' href='index.html'>Cerrar sesión</a></li>
+    </ul>
+
+    <ul class='sidenav' id='sidenav'>
+        <li>
+            <div class='user-view'>
+                <div class='background'>
+                    <img src='img/sidenav-background.jpg'>
+                </div>
+                <a href='profile.html'>
+                    <img class='circle user-sidenav user-min-image' src=''>
+                    <span class='white-text name user-min-name'></span>
+                    <span class='white-text email user-min-email'></span>
+                </a>
+            </div>
+        </li>
+        <li><a class='black-text' href='course.html'><i class='material-icons'>widgets</i>Curso</a></li>
+        <li><a class='black-text' href='badges.html'><i class='material-icons'>grade</i>Mis insignias</a></li>
+        <li>
+            <div class='divider'></div>
+        </li>
+        <li><a class='black-text' href='team.html'><i class='material-icons'>group</i>Mi equipo</a></li>
+        <li><a class='black-text' href='mentors.html'><i class='material-icons'>local_cafe</i>Mentores</a></li>
+        <li><a class='black-text' href='fridas.html'><i class='material-icons'>favorite</i>Fridas</a></li>
+        <li>
+            <div class='divider'></div>
+        </li>
+        <li><a class='black-text logout' href='index.html'><i class='material-icons'>exit_to_app</i>Cerrar sesión</a></li>
+    </ul>
+
+    <main class='container'>
+
+        <div class='row margin-bot-resizable-course'>
+            <div class='col s12 l6'>
+                <h1 class='pink-text no-margin-bot'>Actividades del curso</h1>
+            </div>
+            <div class='col s12 l6 margin-top-resizable-course'>
+                <div class='progress pink lighten-4 round-all-corners margin-bot-025'>
+
+                    <!--
+                        To set course progress, set $('.determinate') width to progress percentage and $('.determinate span') inner html to 'PERCENTAGE%&nbsp;completado'
+                    -->
+
+                    <div class='determinate pink' style='width: 0%'>
+                        <span class='small-font white-text margin-left-1'>0%&nbsp;completado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='row'>
+            <div class='col s12'>
+                <div class='card round-all-corners z-depth-2'>
+                    <div class='card-tabs'>
+                        <ul class='tabs tabs-fixed-width round-top-corners' id='unit-tabs'>
+
+                            <!--
+                                Unit tabs go inside #unit-tabs
+                                
+                                UNIT TAB HTML
+                                <li class='tab'><a href='#🖐🏻UNIT-ID🖐🏻'>Unidad 🖐🏻NUMBER🖐🏻</a></li>
+
+                                LOCKED UNIT TAB HTML
+                                <li class='tab disabled' data-tooltip='Termina la unidad anterior para desbloquear esta unidad'><a href='#🖐🏻UNIT-ID🖐🏻'>Unidad 🖐🏻NUMBER🖐🏻</a></li>
+                            -->
+
+                            <!-- <li class='tab'><a href='#no-team'>No tienes equipo</a></li> -->
+
+                        </ul>
+                    </div>
+                    <div class='card-content grey lighten-5 round-all-corners' id='units'>
+                        <!--
+                            Units go inside #units
+                            <div class='row no-margin-bot' id='🖐🏻UNIT-ID🖐🏻'></div>
+
+                            Activities go inside the unit content divs (#unit-id)
+
+                            ACTIVITY HTML
+                            <div class='col s12 m4'>
+                                <div class='card round-all-corners'>
+                                    <div class='card-image waves-effect waves-light'>
+                                        <a href='activity.html'><img class='round-top-corners' src='img/user.jpg'></a>
+                                    </div>
+                                    <div class='card-content activator cursor-pointer'>
+                                        <span class='card-title activator no-margin-bot'>🖐🏻ACTIVITY-NUMBER🖐🏻<i class='material-icons right'>keyboard_arrow_up</i></span>
+                                    </div>
+                                    <div class='card-reveal'>
+                                        <span class='card-title margin-bot-1'>🖐🏻ACTIVITY-NUMBER🖐🏻<i class='material-icons right'>keyboard_arrow_down</i></span>
+                                        <p>Estado: <strong class='pink-text'>🖐🏻ACTIVITY-STATE🖐🏻</strong></p>
+                                        <p>Calificación: <strong class='pink-text'>🖐🏻GRADE🖐🏻</strong></p>
+                                        <p class='margin-bot-1'>Insignias conseguidas: <strong class='pink-text'>🖐🏻OBTAINED-BADGES-NUMBER🖐🏻</strong></p>
+                                        <p>Entregada el: <strong class='pink-text'>🖐🏻SUBMIT-TIME🖐🏻</strong></p>
+                                        <p class='margin-bot-1'>Límite de entrega: <strong class='pink-text'>🖐🏻SUBMIT-TIME-LIMIT🖐🏻</strong></p>
+                                        <a class='btn-small pink-small pink white-text width-100' href='🖐🏻ACTIVITY-URL🖐🏻'>Ver</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            LOCKED ACTIVITY HTML
+                            <div class='col s12 m4'>
+                                <div class='card round-all-corners'>
+                                    <div class='card-image waves-effect waves-light cursor-not-allowed'>
+                                        <img class='round-top-corners locked-image' src='🖐🏻ACTIVITY-IMAGE-URL🖐🏻'>
+                                    </div>
+                                    <div class='card-content cursor-not-allowed'>
+                                        <span class='card-title no-margin-bot'>🖐🏻ACTIVITY-NUMBER🖐🏻
+                                            <i class='material-icons right' data-tooltip='Termina las actividades anteriores para desbloquear esta actividad'>lock_outline</i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        -->
+
+                        <!-- <div class='row no-margin-bot padding-2 center-align' id='no-team'>
+                            <h1 class='no-margin-top margin-bot-1'>Aún no tienes un equipo</h1>
+                            <p class='medium-font'>Debes ser parte de uno para poder comenzar el curso. Para esto,
+                                acércarte a un(a) mentor(a) y pídele que te asigne a uno. Puedes ver los perfiles de
+                                los mentores haciendo clic <a class='pink-text' href='mentors.html'><strong>aquí</strong></a>.
+                                Cuando encuentres a un(a) mentor(a) de tu agrado, contáctalo(a) por correo electrónico.</p>
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class='page-footer grey darken-3'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col s12 l6'>
+                    <ul class='collapsible grey-text text-lighten-2'>
+                        <li>
+                            <div class='collapsible-header grey darken-3'><i class='material-icons'>info_outline</i>Código
+                                Frida</div>
+                            <div class='collapsible-body'><span>Código Frida es un programa para la inclusión de
+                                    mujeres jóvenes en las STEM a través del diseño de aplicaciones móviles que
+                                    resuelven un problema social.</span></div>
+                        </li>
+                        <li>
+                            <div class='collapsible-header grey darken-3'><i class='material-icons'>directions_run</i>Cómo
+                                comenzar</div>
+                            <div class='collapsible-body'><span>Acércate a un(a) mentor(a) y pídele que te asigne
+                                    a un equipo de trabajo. Puedes ver los perfiles de los mentores haciendo clic
+                                    <a class='pink-text text-lighten-3' href='mentors.html'><strong>aquí</strong></a>.
+                                    Cuando encuentres a un(a) mentor(a) de tu agrado, contáctalo(a) por correo
+                                    electrónico.</span></div>
+                        </li>
+                        <li>
+                            <div class='collapsible-header grey darken-3'><i class='material-icons'>low_priority</i>Qué
+                                puedo hacer</div>
+                            <div class='collapsible-body'><span>
+                                    Trabaja con tu equipo y completa las actividades del
+                                    <a class='pink-text text-lighten-3' href='course.html'><strong>curso</strong></a>.
+                                    Recibe insignias en base a tu desempeño realizado en cada actividad. ¡Colecciona
+                                    suficientes insignias y recibe premios en la vida real!</span></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class='col s12 l4 offset-l2'>
+                    <h4 class='grey-text text-lighten-2 margin-bot-1'>Patrocinadores</h4>
+                    <a class='sponsor' href='http://cognosac.org/' target='_blank'><img src='img/sponsor-cognos.png'></a>
+                    <a class='sponsor' href='https://ludolab.org/' target='_blank'><img src='img/sponsor-ludolab.png'></a>
+                    <a class='sponsor' href='https://inist.mx/' target='_blank'><img src='img/sponsor-inist.png'></a>
+                </div>
+
+            </div>
+        </div>
+        <div class='footer-copyright grey darken-4'>
+            <div class='container'>
+                &copy; 2018 Código Frida
+                <div class='right'>
+                    <a href='' target='_blank'><img class='social-media' src='img/social-facebook.png'></a>
+                    <a class='margin-left-03' href='' target='_blank'><img class='social-media' src='img/social-twitter.png'></a>
+                    <a class='margin-left-03' href='' target='_blank'><img class='social-media' src='img/social-github.png'></a>
+                    <a class='margin-left-03' href='mailto:franciscoivan_lepe@ucol.mx?Subject=Código%20Frida' target='_top'><img
+                            class='social-media' src='img/social-mail.png'></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

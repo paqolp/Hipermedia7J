@@ -1,0 +1,15 @@
+@media all and (min-width: 993px) {
+
+    .margin-top-resizable-team {
+        margin-top: 0 !important;
+    }
+
+}
+
+@media all and (max-width: 992px) {
+
+    .margin-top-resizable-team {
+        margin-top: 2em !important;
+    }
+
+}

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Mi perfil</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='shortcut icon' href='img/icon.png' type='image/x-icon'>
+    <link rel='stylesheet' href='css/main.css'>
+    <link rel='stylesheet' href='css/profile.css'>
+    <link rel='stylesheet' href='includes/materialize/materialize.css'>
+    <script src='includes/jquery/jquery-3.3.1.min.js'></script>
+    <script src='includes/materialize/materialize.js'></script>
+    <script src='includes/moment/moment.min.js'></script>
+    <script src='js/main.js'></script>
+    <script src='js/profile.js'></script>
+</head>
+
+<body>
+
+    <nav class='pink darken-1'>
+        <div class='nav-wrapper container'>
+            <a class='brand-logo' href='course.html'><img src='img/logo.png'></a>
+            <a class='sidenav-trigger' data-target='sidenav'><i class='white-text material-icons'>menu</i></a>
+            <ul class='right hide-on-med-and-down'>
+                <li><a class='white-text' href='course.html'>Curso</a></li>
+                <li><a class='white-text' href='badges.html'>Mis insignias</a></li>
+                <li><a class='white-text' href='team.html'>Mi equipo</a></li>
+                <li><a class='white-text' href='mentors.html'>Mentores</a></li>
+                <li><a class='white-text' href='fridas.html'>Fridas</a></li>
+                <li class='active' id='nav-profile-button'><a class='white-text dropdown-trigger valign-wrapper' href='profile.html'
+                        data-target='profile-dropdown'>
+                        <div class='user-min-name'></div>
+                        <img class='circle user-nav right user-min-image' src=''>
+                    </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class='dropdown-content' id='profile-dropdown'>
+        <li class='pink darken-1'><a class='white-text' href='profile.html'>Mi perfil</a></li>
+        <li class='pink darken-1'><a class='white-text logout' href='index.html'>Cerrar sesión</a></li>
+    </ul>
+
+    <ul class='sidenav' id='sidenav'>
+        <li>
+            <div class='user-view'>
+                <div class='background'>
+                    <img src='img/sidenav-background.jpg'>
+                </div>
+                <a href='profile.html'>
+                    <img class='circle user-sidenav user-min-image' src=''>
+                    <span class='white-text name user-min-name'></span>
+                    <span class='white-text email user-min-email'></span>
+                </a>
+            </div>
+        </li>
+        <li><a class='black-text' href='course.html'><i class='material-icons'>widgets</i>Curso</a></li>
+        <li><a class='black-text' href='badges.html'><i class='material-icons'>grade</i>Mis insignias</a></li>
+        <li>
+            <div class='divider'></div>
+        </li>
+        <li><a class='black-text' href='team.html'><i class='material-icons'>group</i>Mi equipo</a></li>
+        <li><a class='black-text' href='mentors.html'><i class='material-icons'>local_cafe</i>Mentores</a></li>
+        <li><a class='black-text' href='fridas.html'><i class='material-icons'>favorite</i>Fridas</a></li>
+        <li>
+            <div class='divider'></div>
+        </li>
+        <li><a class='black-text logout' href='index.html'><i class='material-icons'>exit_to_app</i>Cerrar sesión</a></li>
+    </ul>
+
+    <main class='container'>
+        <div class='row'>
+            <div class='col s12'>
+                <h1 class='pink-text no-margin-bot'>Mi perfil</h1>
+            </div>
+        </div>
+        <div class='row no-margin-bot'>
+            <div class='col s12 l7 margin-bot-resizable'>
+                <div class='card-panel grey lighten-5 round-all-corners no-margin-bot'>
+                    <h5 class='card-title'>Datos</h5>
+                    <div class='row no-margin-bot'>
+                        <div class='col s12 l5 input-field'>
+                            <input type='text' id='user-name'>
+                            <label for='user-name'>Nombre(s)</label>
+                        </div>
+                        <div class='col s12 l7 input-field'>
+                            <input type='text' id='user-last-name'>
+                            <label for='user-last_name'>Apellidos</label>
+                        </div>
+                    </div>
+                    <div class='row no-margin-bot'>
+                        <div class='col s12 l5 input-field'>
+                            <input class='datepicker' type='text' id='user-birthday'>
+                            <label for='user-birthday'>Fecha de nacimiento</label>
+                        </div>
+                        <div class='col s12 l7 input-field'>
+                            <input type='email' id='user-email' disabled>
+                            <label for='user-email'>Correo electrónico</label>
+                        </div>
+                    </div>
+                    <div class='row no-margin-bot'>
+                        <div class='col s12 l5 input-field'>
+                            <input type='text' id='user-cellphone-number'>
+                            <label for='user-cellphone-number'>Número de celular</label>
+                        </div>
+                        <div class='col s12 l7 input-field'>
+                            <input type='text' id='user-provenance'>
+                            <label for='user-provenance'>Escuela de procedencia</label>
+                        </div>
+                    </div>
+                    <div class='row hide-on-frida no-margin-bot'>
+                        <div class='col s12 input-field'>
+                            <select id='mentor-area'>
+                                <option value='FM_CT'>Físico matemático y ciencias de la tierra</option>
+                                <option value='B_Q'>Biología y química</option>
+                                <option value='M_CS'>Medicina y ciencias de la salud</option>
+                                <option value='H_CC'>Humanidades y ciencias de la conducta</option>
+                                <option value='S_EA'>Sociales y económico administrativas</option>
+                                <option value='B_CA'>Biotecnología y ciencias agropecuarias</option>
+                                <option value='ING'>Ingenierías</option>
+                            </select>
+                            <label>Área de conocimiento</label>
+                        </div>
+                    </div>
+                    <div class='row hide-on-team no-margin-bot'>
+                        <a class='valign-wrapper' href='team.html' target='_blank' id='team-link'>
+                            <div class='col s11 input-field cursor-pointer'>
+                                <input class='cursor-pointer' type='text' id='team-name' disabled>
+                                <label for='team-name'>Equipo</label>
+                            </div>
+                            <div class='col s1 input-field cursor-pointer no-padding no-margin center-align'>
+                                <i class='material-icons pink-text'>open_in_new</i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class='row no-margin-bot'>
+                        <div class='col s12 input-field no-margin-bot'>
+                            <textarea class='materialize-textarea' id='user-bio'></textarea>
+                            <label for='user-bio'>Biografía</label>
+                        </div>
+                    </div>
+                    <div class='right-align'>
+                        <a class='hide-on-other-user btn-small pink white-text margin-top-1' disabled>Guardar cambios</a>
+                    </div>
+                </div>
+            </div>
+            <div class='col s12 l5'>
+                <div class='card round-all-corners'>
+                    <div class='card-image'>
+                        <img class='round-all-corners' id='user-image' src=''>
+                        <a class='hide-on-other-user file-field btn-floating btn-large halfway-fab waves-effect waves-light pink' disabled>
+                            <i class='material-icons'>photo_camera</i>
+                            <input type='file' multiple>
+                        </a>
+                    </div>
+                </div>
+                <a class='hide-on-other-user modal-trigger btn pink white-text padding-top-03 margin-bot-105 width-100'
+                    href='#password-modal' disabled>Cambiar
+                    contraseña</a>
+            </div>
+        </div>
+
+        <div class='row hide-on-mentor'>
+            <div class='col s12'>
+                <div class='card-panel grey lighten-5 center-align margin-top-resizable round-all-corners'>
+                    <h5 class='card-title'>Insignias</h5>
+                    <div class='profile-badge-card' id='badges'>
+                        <!-- Frida badges go here
+                                <img class='small-badge' data-tooltip='BADGE-SUMMARIZE' src='img/badge-early.png'> -->
+                        <p class='no-margin-top'>Las insignias que consigas aparecerán aquí</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='modal round-all-corners' id='password-modal'>
+            <div class='modal-content no-padding-bot'>
+                <h4>Lo sentimos</h4>
+                <div class='row'>
+                    <div class='col s12'>
+                        <p>Esta opción está en desarrollo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class='modal-footer'>
+                <a class='modal-close btn-flat'>Aceptar</a>
+            </div>
+        </div>
+
+        <!--
+            <div class='modal round-all-corners' id='password-modal'>
+                <div class='modal-content no-padding-bot'>
+                    <h4>Cambio de contraseña</h4>
+                    <div class='row'>
+                        <div class='col s12'>
+                            <div class='input-field'>
+                                <input type='password' id='current-password'>
+                                <label for='current-password'>Contraseña actual</label>
+                            </div>
+                            <div class='input-field'>
+                                <input type='password' id='new-password'>
+                                <label for='new-password'>Contraseña nueva</label>
+                            </div>
+                            <div class='input-field no-margin-bot'>
+                                <input type='password' id='new-password-repeat'>
+                                <label for='new-password-repeat'>Repetir contraseña nueva</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='modal-footer'>
+                    <a class='modal-close btn-flat'>Cancelar</a>
+                    <a class='modal-close btn-flat'>Aceptar</a>
+                </div>
+            </div>
+        -->
+
+    </main>
+
+    <footer class='page-footer grey darken-3'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col s12 l6'>
+                    <ul class='collapsible grey-text text-lighten-2'>
+                        <li>
+                            <div class='collapsible-header grey darken-3'><i class='material-icons'>info_outline</i>Código
+                                Frida</div>
+                            <div class='collapsible-body'><span>Código Frida es un programa para la inclusión de
+                                    mujeres jóvenes en las STEM a través del diseño de aplicaciones móviles que
+                                    resuelven un problema social.</span></div>
+                        </li>
+                        <li>
+                            <div class='collapsible-header grey darken-3'><i class='material-icons'>directions_run</i>Cómo
+                                comenzar</div>
+                            <div class='collapsible-body'><span>Acércate a un(a) mentor(a) y pídele que te asigne
+                                    a un equipo de trabajo. Puedes ver los perfiles de los mentores haciendo clic
+                                    <a class='pink-text text-lighten-3' href='mentors.html'><strong>aquí</strong></a>.
+                                    Cuando encuentres a un(a) mentor(a) de tu agrado, contáctalo(a) por correo
+                                    electrónico.</span></div>
+                        </li>
+                        <li>
+                            <div class='collapsible-header grey darken-3'><i class='material-icons'>low_priority</i>Qué
+                                puedo hacer</div>
+                            <div class='collapsible-body'><span>
+                                    Trabaja con tu equipo y completa las actividades del
+                                    <a class='pink-text text-lighten-3' href='course.html'><strong>curso</strong></a>.
+                                    Recibe insignias en base a tu desempeño realizado en cada actividad. ¡Colecciona
+                                    suficientes insignias y recibe premios en la vida real!</span></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class='col s12 l4 offset-l2'>
+                    <h4 class='grey-text text-lighten-2 margin-bot-1'>Patrocinadores</h4>
+                    <a class='sponsor' href='http://cognosac.org/' target='_blank'><img src='img/sponsor-cognos.png'></a>
+                    <a class='sponsor' href='https://ludolab.org/' target='_blank'><img src='img/sponsor-ludolab.png'></a>
+                    <a class='sponsor' href='https://inist.mx/' target='_blank'><img src='img/sponsor-inist.png'></a>
+                </div>
+
+            </div>
+        </div>
+        <div class='footer-copyright grey darken-4'>
+            <div class='container'>
+                &copy; 2018 Código Frida
+                <div class='right'>
+                    <a href='' target='_blank'><img class='social-media' src='img/social-facebook.png'></a>
+                    <a class='margin-left-03' href='' target='_blank'><img class='social-media' src='img/social-twitter.png'></a>
+                    <a class='margin-left-03' href='' target='_blank'><img class='social-media' src='img/social-github.png'></a>
+                    <a class='margin-left-03' href='mailto:franciscoivan_lepe@ucol.mx?Subject=Código%20Frida' target='_top'><img
+                            class='social-media' src='img/social-mail.png'></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

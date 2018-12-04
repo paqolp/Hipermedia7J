@@ -1,0 +1,23 @@
+.index-form {
+    margin: auto;
+    padding: 3em;
+    margin-top: -3em;
+    margin-bottom: 16em;
+    border: solid #bdbdbd 1px;
+}
+
+@media all and (min-width: 993px) {
+
+    .index-form {
+        width: 40% !important;
+    }
+
+}
+
+@media all and (max-width: 992px) {
+
+    .index-form {
+        width: 85% !important;
+    }
+
+}

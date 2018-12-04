@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Mis insignias</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='shortcut icon' href='../img/icon.png' type='image/x-icon'>
+    <link rel='stylesheet' href='../css/main.css'>
+    <link rel='stylesheet' href='../css/badges.css'>
+    <link rel='stylesheet' href='../includes/materialize/materialize.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quicksand:400,500,700'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script>
+        window.jQuery || document.write('<script src="includes/jquery/jquery-3.3.1.min.js"><\/script>');
+    </script>
+    <script src='../includes/materialize/materialize.js'></script>
+    <script src='../js/main.js'></script>
+    <script src='../js/badges.js'></script>
+</head>
+
+<body>
+
+    <main class='container'>
+
+        <div class='row'>
+            <div class='col s12'>
+                <h1 class='pink-text no-margin-bot'>Mis insignias</h1>
+            </div>
+        </div>
+
+        <div class='row'>
+            <div class='col s12'>
+                <div class='card grey lighten-5 center-align round-all-corners z-depth-2 padding-2' id='badges'>
+                    <a class='tooltipped modal-trigger' href='#submit-badge-modal' data-tooltip='Entregaste la actividad 1 de la unidad 1 a tiempo'>
+                        <img class='big-badge' src='../img/badge-submit.png'>
+                    </a>
+                    <a class='tooltipped modal-trigger' href='#early-badge-modal' data-tooltip='Entregaste la actividad 1 de la unidad 1 antes de tiempo'>
+                        <img class='big-badge' src='../img/badge-early.png'>
+                    </a>
+                    <a class='tooltipped modal-trigger' href='#good-badge-modal' data-tooltip='Obtuviste un resultado bueno o superior en la acividad 1 de la unidad 1'>
+                        <img class='big-badge' src='../img/badge-good.png'>
+                    </a>
+                    <a class='tooltipped modal-trigger' href='#excelent-badge-modal' data-tooltip='Obtuviste un resultado excelente en la acividad 1 de la unidad 1'>
+                        <img class='big-badge' src='../img/badge-excelent.png'>
+                    </a>
+                    <a class='tooltipped modal-trigger' href='#unit-badge-modal' data-tooltip='¡Terminaste la primera unidad!'>
+                        <img class='big-badge' src='../img/badge-unit.png'>
+                    </a>
+                    <a class='tooltipped modal-trigger' href='#finish-badge-modal' data-tooltip='¡Terminaste el curso!'>
+                        <img class='big-badge' src='../img/badge-finish.png'>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class='modal round-all-corners' id='submit-badge-modal'>
+            <div class='modal-content no-padding-bot'>
+                <h4>Insignia de entrega exitosa</h4>
+                <div class='row'>
+                    <div class='col s12 m6 center-align'>
+                        <img class='huge-badge' src='../img/badge-submit.png'>
+                    </div>
+                    <div class='col s12 m6'>
+                        <p class='font-size-1025'>Conseguida el
+                            <strong class='pink-text'>16 de octubre de 2018</strong> tras haber entregado la
+                            <strong class='pink-text'>actividad 1</strong> de la
+                            <strong class='pink-text'>unidad 1</strong> a tiempo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='modal-footer'>
+                <a href='activity.html' class='modal-close waves-effect waves-green btn-flat'>Ver entrega</a>
+                <a class='modal-close waves-effect waves-green btn-flat'>Cerrar</a>
+            </div>
+        </div>
+
+        <div class='modal round-all-corners' id='early-badge-modal'>
+            <div class='modal-content no-padding-bot'>
+                <h4>Insignia de entrega temprana</h4>
+                <div class='row'>
+                    <div class='col s12 m6 center-align'>
+                        <img class='huge-badge' src='../img/badge-early.png'>
+                    </div>
+                    <div class='col s12 m6'>
+                        <p class='font-size-1025'>Conseguida el
+                            <strong class='pink-text'>16 de octubre de 2018</strong> tras haber entregado la
+                            <strong class='pink-text'>actividad 1</strong> de la
+                            <strong class='pink-text'>unidad 1</strong> un total de
+                            <strong class='pink-text'>32 horas</strong> antes del tiempo límite.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='modal-footer'>
+                <a href='activity.html' class='modal-close waves-effect waves-green btn-flat'>Ver entrega</a>
+                <a class='modal-close waves-effect waves-green btn-flat'>Cerrar</a>
+            </div>
+        </div>
+
+        <div class='modal round-all-corners' id='good-badge-modal'>
+            <div class='modal-content no-padding-bot'>
+                <h4>Insignia de entrega satisfactoria</h4>
+                <div class='row'>
+                    <div class='col s12 m6 center-align'>
+                        <img class='huge-badge' src='../img/badge-good.png'>
+                    </div>
+                    <div class='col s12 m6'>
+                        <p class='font-size-1025'>Conseguida el
+                            <strong class='pink-text'>16 de octubre de 2018</strong> por haber obtenido un
+                            <strong class='pink-text'>resultado bueno o superior</strong> en la entrega de la
+                            <strong class='pink-text'>actividad 1</strong> de la
+                            <strong class='pink-text'>unidad 1</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='modal-footer'>
+                <a href='activity.html' class='modal-close waves-effect waves-green btn-flat'>Ver entrega</a>
+                <a class='modal-close waves-effect waves-green btn-flat'>Cerrar</a>
+            </div>
+        </div>
+
+        <div class='modal round-all-corners' id='excelent-badge-modal'>
+            <div class='modal-content no-padding-bot'>
+                <h4>Insignia de entrega excelente</h4>
+                <div class='row'>
+                    <div class='col s12 m6 center-align'>
+                        <img class='huge-badge' src='../img/badge-excelent.png'>
+                    </div>
+                    <div class='col s12 m6'>
+                        <p class='font-size-1025'>Conseguida el
+                            <strong class='pink-text'>16 de octubre de 2018</strong> por haber obtenido un
+                            <strong class='pink-text'>resultado excelente</strong> en la entrega de la
+                            <strong class='pink-text'>actividad 1</strong> de la
+                            <strong class='pink-text'>unidad 1</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='modal-footer'>
+                <a href='activity.html' class='modal-close waves-effect waves-green btn-flat'>Ver entrega</a>
+                <a class='modal-close waves-effect waves-green btn-flat'>Cerrar</a>
+            </div>
+        </div>
+
+        <div class='modal round-all-corners' id='unit-badge-modal'>
+            <div class='modal-content no-padding-bot'>
+                <h4>Insignia de unidad terminada</h4>
+                <div class='row'>
+                    <div class='col s12 m6 center-align'>
+                        <img class='huge-badge' src='../img/badge-unit.png'>
+                    </div>
+                    <div class='col s12 m6'>
+                        <p class='font-size-1025'>Conseguida el
+                            <strong class='pink-text'>16 de octubre de 2018</strong>
+                            por haber concluido con éxito todas las actividades de la
+                            <strong class='pink-text'>unidad 1</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='modal-footer'>
+                <a class='modal-close waves-effect waves-green btn-flat'>Cerrar</a>
+            </div>
+        </div>
+
+        <div class='modal round-all-corners' id='finish-badge-modal'>
+            <div class='modal-content no-padding-bot'>
+                <h4>Insignia de curso terminado</h4>
+                <div class='row'>
+                    <div class='col s12 m6 center-align'>
+                        <img class='huge-badge' src='../img/badge-finish.png'>
+                    </div>
+                    <div class='col s12 m6'>
+                        <p class='font-size-1025'>Conseguida el
+                            <strong class='pink-text'>16 de octubre de 2018</strong>
+                            por haber concluido con éxito el curso de
+                            <strong class='pink-text'>Código Frida</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='modal-footer'>
+                <a class='modal-close waves-effect waves-green btn-flat'>Cerrar</a>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

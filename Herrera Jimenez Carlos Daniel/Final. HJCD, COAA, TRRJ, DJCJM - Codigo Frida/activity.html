@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Actividad 1</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='shortcut icon' href='img/icon.png' type='image/x-icon'>
+    <link rel='stylesheet' href='css/main.css'>
+    <link rel='stylesheet' href='css/activity.css'>
+    <link rel='stylesheet' href='includes/materialize/materialize.css'>
+    <script src='includes/jquery/jquery-3.3.1.min.js'></script>
+    <script src='includes/materialize/materialize.js'></script>
+    <script src='includes/moment/moment.min.js'></script>
+    <script src='js/main.js'></script>
+    <script src='js/activity.js'></script>
+</head>
+
+<body>
+
+    <nav class='pink darken-1'>
+        <div class='nav-wrapper container'>
+            <a class='brand-logo' href='course.html'><img src='img/logo.png'></a>
+            <a class='sidenav-trigger' data-target='sidenav'><i class='white-text material-icons'>menu</i></a>
+            <ul class='right hide-on-med-and-down'>
+                <li><a class='white-text' href='course.html'>Curso</a></li>
+                <li><a class='white-text' href='badges.html'>Mis insignias</a></li>
+                <li><a class='white-text' href='team.html'>Mi equipo</a></li>
+                <li><a class='white-text' href='mentors.html'>Mentores</a></li>
+                <li><a class='white-text' href='fridas.html'>Fridas</a></li>
+                <li><a class='white-text dropdown-trigger valign-wrapper' href='profile.html' data-target='profile-dropdown'>
+                        <div class='user-min-name'></div>
+                        <img class='circle user-nav right user-min-image' src=''>
+                    </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class='dropdown-content' id='profile-dropdown'>
+        <li class='pink darken-1'><a class='white-text' href='profile.html'>Mi perfil</a></li>
+        <li class='pink darken-1'><a class='white-text logout' href='index.html'>Cerrar sesión</a></li>
+    </ul>
+
+    <ul class='sidenav' id='sidenav'>
+        <li>
+            <div class='user-view'>
+                <div class='background'>
+                    <img src='img/sidenav-background.jpg'>
+                </div>
+                <a href='profile.html'>
+                    <img class='circle user-sidenav user-min-image' src=''>
+                    <span class='white-text name user-min-name'></span>
+                    <span class='white-text email user-min-email'></span>
+                </a>
+            </div>
+        </li>
+        <li><a class='black-text' href='course.html'><i class='material-icons'>widgets</i>Curso</a></li>
+        <li><a class='black-text' href='badges.html'><i class='material-icons'>grade</i>Mis insignias</a></li>
+        <li>
+            <div class='divider'></div>
+        </li>
+        <li><a class='black-text' href='team.html'><i class='material-icons'>group</i>Mi equipo</a></li>
+        <li><a class='black-text' href='mentors.html'><i class='material-icons'>local_cafe</i>Mentores</a></li>
+        <li><a class='black-text' href='fridas.html'><i class='material-icons'>favorite</i>Fridas</a></li>
+        <li>
+            <div class='divider'></div>
+        </li>
+        <li><a class='black-text logout' href='index.html'><i class='material-icons'>exit_to_app</i>Cerrar sesión</a></li>
+    </ul>
+
+    <main class='container'>
+        <div class='row margin-bot-resizable-activity'>
+            <div class='col s12 l8'>
+                <h1 class='pink-text no-margin-bot' id='activity-title'></h1>
+                <h6 class='grey-text text-darken-3' id='activity-deadline'>Límite de entrega: 18 oct. 23:00</h6>
+            </div>
+            <div class='col s12 l4 margin-top-resizable-3-1'>
+                <div class='row'>
+                    <div class='col s2'>
+                        <a class='btn-small pink white-text width-100 no-padding'><i class='material-icons'>keyboard_arrow_left</i></a>
+                    </div>
+                    <div class='col s8 no-padding'>
+                        <a class='dropdown-trigger btn-small pink white-text width-100 no-padding' data-target='activity-dropdown' id='activity-dropdown-main'></a>
+                    </div>
+                    <div class='col s2'>
+                        <a class='btn-small pink white-text width-100 no-padding'><i class='material-icons'>keyboard_arrow_right</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class='dropdown-content' id='activity-dropdown'>
+            <!-- <li><a class='pink white-text center-align'>ACTIVIDAD 2</a></li>
+            <li><a class='pink white-text center-align'>ACTIVIDAD 3</a></li>
+            <li><a class='pink white-text center-align'>ACTIVIDAD 4</a></li>
+            <li><a class='pink white-text center-align'>ACTIVIDAD 5</a></li> -->
+        </ul>
+
+        <div class='row'>
+            <div class='col s12 l8'>
+                <div class='card no-margin-top round-all-corners'>
+                    <div class='card-image responsive-iframe-container'>
+                        <iframe src='' frameborder='0' allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true' id='activity-slides'></iframe>
+                    </div>
+                    <div class='card-content grey lighten-5 padding-bot-025'>
+
+                        <div id='comments'>
+                        
+                            <!-- <div class='input-field'>
+                                <img class='prefix comment-image circle' src='img/user.jpg'>
+                                <p class='comment-text'>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, nobis iste
+                                    quidem voluptatibus doloribus sequi dolorum repellat.
+                                </p>
+                            </div>
+
+                            <div class='input-field'>
+                                <img class='prefix comment-image circle' src='img/user.jpg'>
+                                <p class='comment-text'>
+                                    Nesciunt reiciendis unde quos illum distinctio in corporis facilis
+                                    consequuntur. Quae, consequatur commodi? Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit. Debitis, nobis iste
+                                    quidem voluptatibus doloribus sequi dolorum repellat!
+                                </p>
+                            </div> -->
+                       
+                        </div>
+
+                        <div>
+                            <div class='row'>
+                                <div class='col s9 m10'>
+                                    <div class='input-field'>
+                                        <img class='prefix comment-image circle user-min-image' src=''>
+                                        <input class='validate' placeholder='Añade un comentario sobre esta actividad...' id='comment-content'>
+                                    </div>
+                                </div>
+                                <div class='col s3 m2'>
+                                    <button class='pink btn-small comment-btn width-100 no-padding' id='send-comment'>Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col s12 l4'>
+                <div class='card-panel grey lighten-5 center-align no-margin-top round-all-corners'>
+                    <h5 class='card-title'>Insignias disponibles</h5>
+                    <div id='badges'>
+                        <a class='tooltipped' data-tooltip='Entrega la actividad a tiempo'>
+                            <img class='small-badge' src='img/badge-submit.png'>
+                        </a>
+                        <a class='tooltipped' data-tooltip='Entrega la actividad al menos 24 horas antes de la fecha límite'>
+                            <img class='small-badge' src='img/badge-early.png'>
+                        </a>
+                        <a class='tooltipped' data-tooltip='Recibe una evaluación buena en tu entrega'>
+                            <img class='small-badge' src='img/badge-good.png'>
+                        </a>
+                        <a class='tooltipped' data-tooltip='Recibe una evaluación excelente en tu entrega'>
+                            <img class='small-badge' src='img/badge-excelent.png'>
+                        </a>
+                    </div>
+                </div>
+
+                <div class='card-panel grey lighten-5 round-all-corners'>
+                    <span class='black-text'>
+                        <h5 class='card-title center-align'>Tu trabajo</h5>
+                        <ul class='collection' id='files'>
+                            <!-- <li class='collection-item'>
+                                <div><a href='' class='black-text'>presentación.pdf</a>
+                                    <a href='' class='secondary-content'><i class='material-icons black-text'>clear</i></a>
+                                    <a href='' class='secondary-content'><i class='material-icons black-text'>file_download</i></a>
+                                </div>
+                            </li>
+                            <li class='collection-item'>
+                                <div><a href='' class='black-text'>layout.html</a>
+                                    <a href='' class='right'><i class='material-icons black-text'>clear</i></a>
+                                    <a href='' class='right'><i class='material-icons black-text'>file_download</i></a>
+                                </div>
+                            </li>
+                            <li class='collection-item'>
+                                <div><a href='' class='black-text'>estilo.css</a>
+                                    <a href='' class='right'><i class='material-icons black-text'>clear</i></a>
+                                    <a href='' class='right'><i class='material-icons black-text'>file_download</i></a>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </span>
+                </div>
+
+                <form action=''>
+                    <div class='file-field input-field'>
+                        <div class='btn width-100 pink white-text' id='lpm'>
+                            <span>Añadir archivos</span>
+                            <form id='upload'>
+                                <input type='file' name='file' id='upload-file'>
+                            </form>
+                        </div>
+                        <div class='file-path-wrapper'>
+                            <input class='file-path validate hide' type='text'>
+                        </div>
+                    </div>
+                </form>
+                <a class='btn width-100 pink white-text padding-top-03 margin-bot-1' id='submit-activity'>Entregar actividad</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class='page-footer grey darken-3'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col s12 l6'>
+                    <ul class='collapsible grey-text text-lighten-2'>
+                        <li>
+                            <div class='collapsible-header grey darken-3'><i class='material-icons'>info_outline</i>Código
+                                Frida</div>
+                            <div class='collapsible-body'><span>Código Frida es un programa para la inclusión de
+                                    mujeres jóvenes en las STEM a través del diseño de aplicaciones móviles que
+                                    resuelven un problema social.</span></div>
+                        </li>
+                        <li>
+                            <div class='collapsible-header grey darken-3'><i class='material-icons'>directions_run</i>Cómo
+                                comenzar</div>
+                            <div class='collapsible-body'><span>Acércate a un(a) mentor(a) y pídele que te asigne
+                                    a un equipo de trabajo. Puedes ver los perfiles de los mentores haciendo clic
+                                    <a class='pink-text text-lighten-3' href='mentors.html'><strong>aquí</strong></a>.
+                                    Cuando encuentres a un(a) mentor(a) de tu agrado, contáctalo(a) por correo
+                                    electrónico.</span></div>
+                        </li>
+                        <li>
+                            <div class='collapsible-header grey darken-3'><i class='material-icons'>low_priority</i>Qué
+                                puedo hacer</div>
+                            <div class='collapsible-body'><span>
+                                    Trabaja con tu equipo y completa las actividades del
+                                    <a class='pink-text text-lighten-3' href='course.html'><strong>curso</strong></a>.
+                                    Recibe insignias en base a tu desempeño realizado en cada actividad. ¡Colecciona
+                                    suficientes insignias y recibe premios en la vida real!</span></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class='col s12 l4 offset-l2'>
+                    <h4 class='grey-text text-lighten-2 margin-bot-1'>Patrocinadores</h4>
+                    <a class='sponsor' href='http://cognosac.org/' target='_blank'><img src='img/sponsor-cognos.png'></a>
+                    <a class='sponsor' href='https://ludolab.org/' target='_blank'><img src='img/sponsor-ludolab.png'></a>
+                    <a class='sponsor' href='https://inist.mx/' target='_blank'><img src='img/sponsor-inist.png'></a>
+                </div>
+
+            </div>
+        </div>
+        <div class='footer-copyright grey darken-4'>
+            <div class='container'>
+                &copy; 2018 Código Frida
+                <div class='right'>
+                    <a href='' target='_blank'><img class='social-media' src='img/social-facebook.png'></a>
+                    <a class='margin-left-03' href='' target='_blank'><img class='social-media' src='img/social-twitter.png'></a>
+                    <a class='margin-left-03' href='' target='_blank'><img class='social-media' src='img/social-github.png'></a>
+                    <a class='margin-left-03' href='mailto:franciscoivan_lepe@ucol.mx?Subject=Código%20Frida' target='_top'><img
+                            class='social-media' src='img/social-mail.png'></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

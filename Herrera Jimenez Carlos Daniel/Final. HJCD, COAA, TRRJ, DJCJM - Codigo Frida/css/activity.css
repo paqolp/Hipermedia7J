@@ -1,0 +1,38 @@
+#activity-dropdown li a {
+    font-weight: 500;
+    font-size: 0.8em !important;
+}
+
+#activity-dropdown li:hover {
+    filter: brightness(1.1);
+}
+
+.comment-image {
+    max-width: 1em !important;
+}
+
+.comment-btn {
+    margin-top: 1.8em !important;
+}
+
+.comment-text {
+    margin-left: 3em !important;
+}
+
+.responsive-iframe-container {
+    width: 100% !important;
+    height: 0 !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    position: relative !important;
+    padding-bottom: 62.5% !important;
+}
+
+.responsive-iframe-container iframe {
+    top: -2px !important;
+    left: -1px !important;
+    width: 103% !important;
+    height: 100.5% !important;
+    max-width: 103% !important;
+    position: absolute !important;
+}
